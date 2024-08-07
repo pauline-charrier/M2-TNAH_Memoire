@@ -7,3 +7,6 @@ Le dépôt contient les répertoires et fichiers suivants :
 - `CHARRIER_Memoire_M2TNAH.pdf`: mémoire de stage au format PDF.
 - `memoire_latex/`: répertoire rassemblant les fichiers .tex du mémoire (document maître, chapitres et sections, images, bibliographie).
 - `livrables_techniques/`: répertoire rassemblant les livrables techniques cités dans le mémoire.
+
+
+*Note*: L'ensemble des réalisations techniques produites pendant le stage sont disponibles sur le [dépôt de travail intitulé "M2-TNAH_Stage"](https://github.com/pauline-charrier/M2-TNAH_Stage). 
