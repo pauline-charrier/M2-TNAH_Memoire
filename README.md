@@ -16,10 +16,28 @@ Le dépôt contient les répertoires et fichiers suivants :
 
 *Note*: L'ensemble des réalisations techniques produites pendant le stage sont disponibles sur le [dépôt de travail intitulé "M2-TNAH_Stage"](https://github.com/pauline-charrier/M2-TNAH_Stage). 
 
+#### Architecture du dépôt
+```text
+bla
+```
+
  ### Licence
  
  [Termes de la licence (CC-by-4.0)]
 
  ### Citer le mémoire
 
- [Citation du mémoire]
+ [Citation texte du mémoire]
+
+ ```bibtex
+ @thesis{charrier_pense_2024,
+        location = {Paris},
+        title = {Titre du mémoire},
+        url = {https://github.com/pauline-charrier/M2-TNAH_Memoire/},
+        pagetotal = {Nb de pages},
+        institution = {École nationale des Chartes},
+        type = {Mémoire pour le diplôme de master "Technologies numériques appliquées à l'histoire"},
+        author = {Charrier, Pauline},
+        urldate = {2024-09-15},
+        date = {2024}
+}
