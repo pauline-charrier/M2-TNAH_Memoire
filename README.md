@@ -16,7 +16,7 @@ Le dépôt contient les répertoires et fichiers suivants :
 
 *Note*: L'ensemble des réalisations techniques produites pendant le stage sont disponibles sur le [dépôt de travail intitulé "M2-TNAH_Stage"](https://github.com/pauline-charrier/M2-TNAH_Stage). 
 
-#### Architecture du dépôt
+#### Arborescence des fichiers
 ```text
 bla
 ```
