@@ -51,7 +51,36 @@ Le dépôt contient les répertoires et fichiers suivants :
                 |_ transfo_citation_indiv.xq
     |_ data_visualisations/
           |_ cartographie/
+                |_ 1_lieux_doucet.csv
+                |_ 2_carto2.py
+                |_ 3_lieux2.geojson
+                |_ 4_carte.xqm
+                |_ 5_carte.js
+                |_ 6_carte.css
+                |_ img/
+                        |_ apartment.png
+                        |_ bibliotheque.png
+                        |_ book-shop.png
+                        |_ fournisseur.png
+                        |_ home.png
+                        |_ quill-dessinant-une-ligne.png
+                        |_ symbole-de-la-maison.png
+                        |_ traiter.png
+                        |_ voyageur-avec-une-valise.png
           |_ chronologie/
+                |_ 1_chrono3.csv
+                |_ 2_export_xlsx.py
+                |_ 3_chrono3.xlsx
+                |_ 3bis_chrono3.txt
+                |_ 4_chrono.xqm
+                |_ 5_chrono.js
+                |_ 6_chrono.css
+                |_ img/
+                        |_ 1898_paix.png
+                        |_ 1906_doucet.png
+                        |_ 1907_spontini.jpg
+                        |_ 1908_rene_jean.jpg
+                        |_ 1909_louxor.png
     |_ traitement_TEI/
           |_ transfos_teiHeader/
                 |_ transfo_tei_doucet.xq
