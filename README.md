@@ -1,6 +1,6 @@
 # Mémoire de stage du Master "Technologies numériques appliquées à l'histoire"
 
-## *[Titre du mémoire]*
+## *L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale*
 
 Ce dépôt rassemble l'ensemble des documents relatifs au mémoire réalisé dans le cadre du stage de fin d'études du Master 2 "Technologies numériques appliquées à l'histoire".    
 Ce stage, qui a également donné lieu à des livrables techniques, a été effectué au pôle "Edition numérique" du Service numérique de la recherche de l'Institut national d'histoire de l'art et s'est étendu sur une durée de quatre mois, entre avril et juillet 2024.  
@@ -13,8 +13,6 @@ Le dépôt contient les répertoires et fichiers suivants :
 - `CHARRIER_Memoire_M2TNAH.pdf`: mémoire de stage au format PDF.
 - `memoire_latex/`: répertoire rassemblant les fichiers .tex du mémoire (document maître, chapitres et sections, images, bibliographie).
 - `livrables_techniques/`: répertoire rassemblant les livrables techniques cités dans le mémoire.
-
-*Note*: L'ensemble des réalisations techniques produites pendant le stage sont disponibles sur le [dépôt de travail intitulé "M2-TNAH_Stage"](https://github.com/pauline-charrier/M2-TNAH_Stage). 
 
 #### Arborescence des fichiers
 ```text
@@ -167,17 +165,17 @@ Le dépôt contient les répertoires et fichiers suivants :
 
  ### Citer le mémoire
 
- [Citation texte du mémoire]
+Pauline Charrier, *L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale*, mémoire de master « Technologies numériques appliquées à l’histoire », dir. Jean-Damien Généro, École nationale des chartes, 2024, [https://github.com/pauline-charrier/M2-TNAH_Memoire](https://github.com/pauline-charrier/M2-TNAH_Memoire).  
 
  ```bibtex
  @thesis{charrier_pense_2024,
         location = {Paris},
-        title = {Titre du mémoire},
+        title = {L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale},
         url = {https://github.com/pauline-charrier/M2-TNAH_Memoire/},
         pagetotal = {Nb de pages},
         institution = {École nationale des Chartes},
         type = {Mémoire pour le diplôme de master "Technologies numériques appliquées à l'histoire"},
         author = {Charrier, Pauline},
-        urldate = {2024-09-15},
+        urldate = {2024-09-30},
         date = {2024}
 }
