@@ -51,8 +51,86 @@ Le dépôt contient les répertoires et fichiers suivants :
           |_ cartographie/
           |_ chronologie/
     |_ traitement_TEI/
+          |_ transfos_teiHeader/
+                |_ transfo_tei_doucet.xq
+                |_ typologies/
+                        |_ 1_typologies.csv
+                        |_ 2_typologies_id.py
+                        |_ 3_typologies_modifie.csv
+                        |_ 4_typologies.xq
+          |_ transfos_body/
+                |_ espace_lb.xsl
+                |_ transfos_persName/
+                        |_ 1_
+                        |_ 2_
+                        |_ 3_
+                        |_ 4_
+                        |_ 5_
+                        |_ 6_
+                        |_ 7_
+                        |_ 8_
+                        |_ 9_
     |_ docs_auxiliaires/
+          |_ index/
+                |_ export_index_lieux.xq
+                |_ export_index_personnes.xq
+                |_ modele_index_liens.xq
+          |_ teiCorpus/
+                |_ transfo_vers_corpus.xq
+                |_ transfo_Corpus_index_persName.xq          
     |_ post_correction/
+          |_ 1_extraction_fichiers/
+                |_ 1_extraction_fichier_body.xq
+                |_ 2_extraction_fichier_text_seul.xq
+                |_ 3_changer_extension_vers_txt.py
+          |_ 2_requete_api_gpt/
+                |_ traitement_balises/
+                        |_ corr_api_gpt_balises.ipynb                
+                |_ traitement_texte_seul/
+                        |_ corr_api_gpt_texte.ipynb
+          |_ 3_evaluation_performance_gpt/
+                        |_ pre_traitement/
+                                    |_ pre_traitement.py
+                        |_ distance_levenshtein.py
+                        |_ score_bleu.py
+                        |_ score_rouge.py                                           
+          |_ 4_data/
+                |_ 1_verite_terrain/
+                        |_ gt_balises/
+                                    |_ 
+                                    |_ 
+                                    |_
+                                    |_ 
+                        |_ gt_texte/
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                |_ 2_input/
+                        |_ fichiers_balises/
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                        |_ fichiers_texte/
+                                    |_
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                |_ 3_fichiers_alignes_pour_evaluation/
+                        |_ output_gpt/
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                                    |_ 
+                        |_ verite_terrain/
+                                    |_ 
+                                    |_ 
+                                    |_
+                                    |_ 
+          |_ languageTool/
+                |_ essai_correction_lt.py
+
 ```
 
  ### Citer le mémoire
