@@ -1,0 +1,40 @@
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;pb facs="#facs_1" n="1" xml:id="img_0001"/&gt;
+        &lt;ab facs="#facs_1_region_1624047100088_457" type="page"/&gt;
+        &lt;ab facs="#facs_1_region_1706198931148_363" type="page-numberpage-number"&gt;
+            &lt;lb facs="#facs_1_line_1706194434894_206" n="N001"/&gt;
+            &lt;hi rend="italic:true;"&gt;(folio)&lt;/hi&gt; 77&lt;/ab&gt;
+        &lt;fw type="header" place="top" facs="#facs_1_region_1617625140636_401"&gt;
+            &lt;lb facs="#facs_1_r1l28" n="N001"/&gt;
+            &lt;date month="0" day="0" year="0"&gt;27 mai 1925&lt;/date&gt;
+            &lt;Address&gt;46, AVENUE DU BOIS-DE-BOULOGNE&lt;/Address&gt;
+            &lt;lb facs="#facs_1_r1l29" n="N002"/&gt;
+            
+            Mon cher &lt;persName key="René-Jean" xml:id="rjean" type="protagoniste"&gt;René-Jean&lt;/persName&gt;.&lt;/fw&gt;
+        &lt;p facs="#facs_1_region_1706194416595_203"/&gt;
+        &lt;p facs="#facs_1_r1"&gt;
+            &lt;lb facs="#facs_1_r1l30" n="N001"/&gt;
+            
+            Je n'ai plus rien à faire à la&lt;lb facs="#facs_1_r1l31" n="N002"/&gt;
+            &lt;Address&gt;Rue de la Paix&lt;/Address&gt;. Mon intervention est&lt;lb facs="#facs_1_r1l32" n="N003"/&gt;
+            
+            nulle, donc malgré mon désir de vous&lt;lb facs="#facs_1_r1l34" n="N004"/&gt;
+            
+            être agréable, je suis impuissant.&lt;lb facs="#facs_1_r1l35" n="N005"/&gt;
+            
+            Pour la Revue dont j'ai reçu deux numéros, &lt;lb facs="#facs_1_r1l36" n="N006"/&gt;
+            
+            cela a-t-il un interêt pour vous ? Si oui,&lt;lb facs="#facs_1_r1l37" n="N007"/&gt;
+            
+            voulez-vous m'envoyer un bulletin d'abonnement&lt;lb facs="#facs_1_r1l38" n="N008"/&gt;
+            
+            que je vous renverrai de suite ?&lt;lb facs="#facs_1_r1l39" n="N009"/&gt;
+            
+            A vous ma grande amitié&lt;/p&gt;
+        &lt;fw type="header" place="bottom" facs="#facs_1_region_1617625151397_404"&gt;
+            &lt;lb facs="#facs_1_r1l40" n="N001"/&gt;
+            &lt;persName&gt;J&lt;persName key="Doucet , Jacques "/&gt;
+            &lt;/persName&gt;acques Doucet&lt;/fw&gt;
+    &lt;/div&gt;
+&lt;/body&gt;

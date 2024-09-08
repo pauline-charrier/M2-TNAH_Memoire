@@ -1,0 +1,18 @@
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+
+let $transformation := (
+
+  for $fichier in collection('Doucet3')
+  return
+    (
+      
+        $fichier  
+      
+    )
+)
+
+let $teiCorpus := <teiCorpus>{$transformation}</teiCorpus>
+
+return
+file:write("doucet3.tei.xml", $teiCorpus)
+(: Par défaut, le fichier est placé dans 'BaseX110\basex\bin' :)

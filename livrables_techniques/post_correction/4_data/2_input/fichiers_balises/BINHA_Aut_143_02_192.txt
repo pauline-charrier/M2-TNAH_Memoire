@@ -1,0 +1,240 @@
+&lt;body xmlns="http://www.tei-c.org/ns/1.0"&gt;
+         &lt;div&gt;
+            &lt;pb facs="#facs_1" n="1" xml:id="img_0001"/&gt;
+            &lt;ab facs="#facs_1_region_1710166521076_94" type="page"/&gt;
+            &lt;ab facs="#facs_1_region_1713803718619_1048" type="page-numberpage-number"&gt;
+               &lt;lb facs="#facs_1_line_1706279271947_868" n="N001"/&gt;
+               &lt;hi rend="italic:true;"&gt;(numérotation Maignan)&lt;/hi&gt; 192&lt;/ab&gt;
+            &lt;fw type="header" place="top" facs="#facs_1_region_1699266475826_55"&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_1" n="N001"/&gt;
+               &lt;date&gt;6 Mars 1917&lt;/date&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_4" n="N002"/&gt;
+         
+      Mon cher &lt;persName key="René-Jean" xml:id="rjean" type="protagoniste"&gt;René-Jean&lt;/persName&gt;
+            &lt;/fw&gt;
+            &lt;fw type="header" place="top" facs="#facs_1_region_1699266524949_61"&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_3" n="N001"/&gt;
+         
+      GOLF HOTEL&lt;lb facs="#facs_1_tr_1_tl_5" n="N002"/&gt;
+               &lt;placeName&gt;BEAUVALLON S/MER&lt;/placeName&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_6" n="N003"/&gt;
+         
+      PAR &lt;placeName&gt;S&lt;hi rend="superscript:true;"&gt;TE&lt;/hi&gt; MAXIME (VAR)&lt;/placeName&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_7" n="N004"/&gt;
+               &lt;hi rend="italic:true;"&gt;Mêmes Maisons :&lt;/hi&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_8" n="N005"/&gt;
+         
+      GOLF-HOTEL. HYERES (VAR)&lt;lb facs="#facs_1_tr_1_tl_10" n="N006"/&gt;
+         
+      SPLENDIDE HOTEL&lt;lb facs="#facs_1_tr_1_tl_11" n="N007"/&gt;
+         
+      (ANGLETERRE-RUSSIE)&lt;lb facs="#facs_1_tr_1_tl_12" n="N008"/&gt;
+         
+      MARSEILLE&lt;/fw&gt;
+            &lt;p facs="#facs_1_region_1710326696378_384"&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_9" n="N001"/&gt;
+         
+      Merci de votre lettre je&lt;lb facs="#facs_1_tr_1_tl_13" n="N002"/&gt;
+         
+      recois aujourd'hui une depêche&lt;lb facs="#facs_1_tr_1_tl_14" n="N003"/&gt;
+         
+      de &lt;persName key="Perdrizet, Paul" xml:id="pperdrizet" type="savant"&gt;Perdrizet&lt;/persName&gt; me disant que vous m'envoyez&lt;lb facs="#facs_1_tr_1_tl_15" n="N004"/&gt;
+         
+      le volume Latour dont je vous suis&lt;lb facs="#facs_1_tr_1_tl_16" n="N005"/&gt;
+         
+      tout à fait reconnaissant. &lt;lb facs="#facs_1_tr_1_tl_17" n="N006"/&gt;
+         
+      Au point de vue Art je ne sais ce que&lt;lb facs="#facs_1_tr_1_tl_18" n="N007"/&gt;
+         
+      sera l'après-guerre, je crois que beaucoup&lt;lb facs="#facs_1_tr_1_tl_19" n="N008"/&gt;
+         
+      de gens voudront s'en mêler et en profiter &lt;lb facs="#facs_1_tr_1_tl_20" n="N009"/&gt;
+         
+      mais les artistes ? je ne sais. Du reste&lt;lb facs="#facs_1_tr_1_tl_21" n="N010"/&gt;
+         
+      en France depuis 60 ans. le milieu art&lt;lb facs="#facs_1_tr_1_tl_22" n="N011"/&gt;
+         
+      moderne a toujours été de 10 ou 20 ans&lt;lb facs="#facs_1_tr_1_tl_23" n="N012"/&gt;
+         
+      en retard C'est l'etranger qui a compris&lt;lb facs="#facs_1_tr_1_tl_24" n="N013"/&gt;
+         
+      les ecoles qui ont été les plus belles de&lt;lb facs="#facs_1_tr_1_tl_26" n="N014"/&gt;
+         
+      notre histoire artistique, depuis &lt;persName key="Corot, Jean-Baptiste Camille" xml:id="jbccorot" type="artiste"&gt;Corot&lt;/persName&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_27" n="N015"/&gt;
+               &lt;persName key="Manet, Édouard" xml:id="emanet" type="artiste"&gt;Manet&lt;/persName&gt;, les &lt;orgName&gt;Impressionnistes&lt;/orgName&gt;, a &lt;placeName&gt;Paris&lt;/placeName&gt; on achetait&lt;lb facs="#facs_1_tr_1_tl_28" n="N016"/&gt;
+         
+      du &lt;persName key="Delaroche, Paul" xml:id="pdelaroche" type="artiste"&gt;Paul Delaroche&lt;/persName&gt;, et toute une ecole&lt;lb facs="#facs_1_tr_1_tl_29" n="N017"/&gt;
+         
+      tombée dans le neant.&lt;lb facs="#facs_1_tr_1_tl_30" n="N018"/&gt;
+               &lt;persName key="Degas, Edgar" xml:id="edegas" type="artiste"&gt;Degas&lt;/persName&gt; etait tout entier en &lt;placeName&gt;Amerique&lt;/placeName&gt;
+               &lt;lb facs="#facs_1_tr_1_tl_31" n="N019"/&gt;
+         
+      quand nous etions quelques malheureux&lt;/p&gt;
+            &lt;ab facs="#facs_1_tr_2" type=""&gt;
+               &lt;lb facs="#facs_1_tr_2_tl_1" n="N001"/&gt;
+         
+      à en acheter, rappelez vous mes premiers&lt;lb facs="#facs_1_tr_2_tl_2" n="N002"/&gt;
+         
+      dessins achetés &lt;placeName&gt;rue Laffitte&lt;/placeName&gt; 1200. 1800 &lt;hi rend="superscript:true;"&gt;f&lt;/hi&gt;.&lt;lb facs="#facs_1_tr_2_tl_3" n="N003"/&gt;
+         
+      Il n'y a pas un &lt;persName key="Cézanne, Paul" xml:id="pcezanne" type="artiste"&gt;Cezanne&lt;/persName&gt; important dans&lt;lb facs="#facs_1_tr_2_tl_4" n="N004"/&gt;
+         
+      nos musées français et remarquez que &lt;lb facs="#facs_1_tr_2_tl_5" n="N005"/&gt;
+         
+      cela continue car si je ne mets&lt;lb facs="#facs_1_tr_2_tl_6" n="N006"/&gt;
+         
+      pas des gens comme &lt;persName key="Vuillard, Édouard" xml:id="evuillard" type="artiste"&gt;Vuillard&lt;/persName&gt;, &lt;persName key="Bonnard, Pierre" xml:id="pbonnard" type="artiste"&gt;Bonnard&lt;/persName&gt;, &lt;lb facs="#facs_1_tr_2_tl_8" n="N007"/&gt;
+               &lt;persName key="Marquet, Albert" xml:id="amarquet" type="artiste"&gt;Marquet&lt;/persName&gt; au même point que ces&lt;lb facs="#facs_1_tr_2_tl_9" n="N008"/&gt;
+         
+      maitres, on n'en a jamais acheté un&lt;lb facs="#facs_1_tr_2_tl_10" n="N009"/&gt;
+         
+      je crois a une forte reaction contre&lt;lb facs="#facs_1_tr_2_tl_11" n="N010"/&gt;
+         
+      la peinture moderne, et il faut dire&lt;lb facs="#facs_1_tr_2_tl_12" n="N011"/&gt;
+         
+      aussi que dans ceux d'avant-garde&lt;lb facs="#facs_1_tr_2_tl_13" n="N012"/&gt;
+         
+      il n'y a personne qui puisse&lt;lb facs="#facs_1_tr_2_tl_14" n="N013"/&gt;
+         
+      prendre la tête, ceux qui y sont sont&lt;lb facs="#facs_1_tr_2_tl_15" n="N014"/&gt;
+         
+      des étrangers comme &lt;persName key="Picasso, Pablo" xml:id="ppicasso" type="artiste"&gt;Picasso&lt;/persName&gt;. &lt;lb facs="#facs_1_tr_2_tl_16" n="N015"/&gt;
+         
+      Il y a un homme de &lt;unclear&gt;precieux&lt;/unclear&gt; talent&lt;lb facs="#facs_1_tr_2_tl_17" n="N016"/&gt;
+         
+      qui a peu produit et qui est peu&lt;lb facs="#facs_1_tr_2_tl_18" n="N017"/&gt;
+         
+      maniable c'est &lt;persName key="Derain, André" xml:id="aderain" type="artiste"&gt;Derain&lt;/persName&gt;, il etait dans &lt;lb facs="#facs_1_tr_2_tl_19" n="N018"/&gt;
+         
+      les mains de &lt;persName key="Kahnweiler, Daniel-Henry" xml:id="dhkahnweiler" type="marchand"&gt;Kahnweiller&lt;/persName&gt;. &lt;lb facs="#facs_1_tr_2_tl_21" n="N019"/&gt;
+         
+      Je trouve des gens comme &lt;persName key="Segonzac, André Dunoyer de" xml:id="adsegonzac" type="artiste"&gt;Segonzac&lt;/persName&gt;
+               &lt;lb facs="#facs_1_tr_2_tl_23" n="N020"/&gt;
+               &lt;persName&gt;Luc Albert Moreau&lt;/persName&gt;, &lt;persName key="Marchand, Jean" xml:id="jmarchand" type="artiste"&gt;Marchand&lt;/persName&gt; interessants&lt;lb facs="#facs_1_tr_2_tl_25" n="N021"/&gt;
+         
+      mais pas assez pour produire un&lt;lb facs="#facs_1_tr_2_tl_26" n="N022"/&gt;
+         
+      mouvement puis ils sont dans les&lt;lb facs="#facs_1_tr_2_tl_27" n="N023"/&gt;
+         
+      mains de petits marchands qui les&lt;lb facs="#facs_1_tr_2_tl_28" n="N024"/&gt;
+         
+      etranglent sans pour eux mêmes&lt;/ab&gt;
+            &lt;p facs="#facs_1_region_1713803795542_1065"/&gt;
+            &lt;pb facs="#facs_2" n="2" xml:id="img_0002"/&gt;
+            &lt;ab facs="#facs_2_region_1710166549882_101" type="page"/&gt;
+            &lt;ab facs="#facs_2_tr_1" type=""&gt;
+               &lt;lb facs="#facs_2_tr_1_tl_2" n="N001"/&gt;
+         
+      faire beaucoup etant trop peu solides.&lt;lb facs="#facs_2_tr_1_tl_4" n="N002"/&gt;
+         
+      Les Anglais ont bien compris pour les&lt;lb facs="#facs_2_tr_1_tl_5" n="N003"/&gt;
+         
+      Arts decoratifs qu'il y aurait un mouvement&lt;lb facs="#facs_2_tr_1_tl_7" n="N004"/&gt;
+         
+      trés grand de réaction contre le style&lt;lb facs="#facs_2_tr_1_tl_8" n="N005"/&gt;
+         
+      boche et comme eux n'ont pas personnellement&lt;lb facs="#facs_2_tr_1_tl_9" n="N006"/&gt;
+         
+      un style ancien, qui chez nous nous etrangle&lt;lb facs="#facs_2_tr_1_tl_10" n="N007"/&gt;
+         
+      par raison commerciale, ils viennent dans &lt;lb facs="#facs_2_tr_1_tl_11" n="N008"/&gt;
+         
+      une grande firme genre Maple de s'attacher&lt;lb facs="#facs_2_tr_1_tl_12" n="N009"/&gt;
+               &lt;persName key="Iribe, Paul" xml:id="piribe" type="artiste"&gt;Iribe&lt;/persName&gt; et moi même j'ai conseillé a &lt;persName key="Iribe, Paul" xml:id="piribe" type="artiste"&gt;Iribe&lt;/persName&gt;
+               &lt;lb facs="#facs_2_tr_1_tl_13" n="N010"/&gt;
+         
+      de le faire, il semblera bien plus grand&lt;lb facs="#facs_2_tr_1_tl_14" n="N011"/&gt;
+         
+      en &lt;placeName&gt;France&lt;/placeName&gt; venant d'&lt;placeName&gt;Angleterre&lt;/placeName&gt; a&lt;lb facs="#facs_2_tr_1_tl_15" n="N012"/&gt;
+               &lt;placeName&gt;Paris&lt;/placeName&gt; on l'aurait piétiné avec l'art&lt;lb facs="#facs_2_tr_1_tl_16" n="N013"/&gt;
+         
+      boche, venant de &lt;placeName&gt;Londres&lt;/placeName&gt; ce sera l'art&lt;lb facs="#facs_2_tr_1_tl_17" n="N014"/&gt;
+         
+      anglais Snobisme !&lt;lb facs="#facs_2_tr_1_tl_18" n="N015"/&gt;
+         
+      En ce moment la bande &lt;persName key="Flameng, François" xml:id="fflameng" type="artiste"&gt;Flameng&lt;/persName&gt;,&lt;lb facs="#facs_2_tr_1_tl_19" n="N016"/&gt;
+               &lt;persName key="Forain, Jean-Louis" xml:id="jlforain" type="artiste"&gt;Forain&lt;/persName&gt;, &lt;persName key="Sert, José Maria" xml:id="jmsert" type="artiste"&gt;Sert&lt;/persName&gt;, &lt;persName key="Vachon, Marius" xml:id="mvachon" type="savant"&gt;Marcus Vachon&lt;/persName&gt;, l'&lt;orgName&gt;Academie&lt;/orgName&gt;
+               &lt;lb facs="#facs_2_tr_1_tl_20" n="N017"/&gt;
+         
+      est toute puissante elle hurle dans les&lt;lb facs="#facs_2_tr_1_tl_21" n="N018"/&gt;
+         
+      cercles, ils sont en uniforme sont plus&lt;lb facs="#facs_2_tr_1_tl_22" n="N019"/&gt;
+         
+      poilus que les poilus que voulez vous&lt;lb facs="#facs_2_tr_1_tl_24" n="N020"/&gt;
+         
+      qu'on leur dise, puis il y a tous les&lt;lb facs="#facs_2_tr_1_tl_25" n="N021"/&gt;
+         
+      embusqués dans les latrines officielles, ils&lt;lb facs="#facs_2_tr_1_tl_26" n="N022"/&gt;
+         
+      y ont pris l'odeur et ne la perdront&lt;lb facs="#facs_2_tr_1_tl_27" n="N023"/&gt;
+         
+      pas. je suis en grand frais avec &lt;persName continued="true"&gt;Pierre&lt;/persName&gt;
+               &lt;lb facs="#facs_2_tr_1_tl_28" n="N024"/&gt;
+               &lt;persName key="Marcel, Pierre" xml:id="pmarcel" type="savant"&gt;Marcel&lt;/persName&gt; qui est venu chez moi faire&lt;lb facs="#facs_2_tr_1_tl_29" n="N025"/&gt;
+         
+      un scandale parce que j'exigeais pour&lt;lb facs="#facs_2_tr_1_tl_31" n="N026"/&gt;
+         
+      continuer de preter mon local, de&lt;/ab&gt;
+            &lt;ab facs="#facs_2_tr_2" type=""&gt;
+               &lt;lb facs="#facs_2_tr_2_tl_1" n="N001"/&gt;
+         
+      tout payer comme je le fais depuis un&lt;lb facs="#facs_2_tr_2_tl_2" n="N002"/&gt;
+         
+      an gaz, electricité, appareils &lt;persName key="Devismes, Eugène" xml:id="edevismes" type="employe"&gt;Devismes&lt;/persName&gt; à&lt;lb facs="#facs_2_tr_2_tl_3" n="N003"/&gt;
+         
+      mes frais, j'exigeais la certitude ecrite que je&lt;lb facs="#facs_2_tr_2_tl_5" n="N004"/&gt;
+         
+      ne serais pas responsable de la trop grande&lt;lb facs="#facs_2_tr_2_tl_6" n="N005"/&gt;
+         
+      depense de gaz et d'électricité, je payais mais&lt;lb facs="#facs_2_tr_2_tl_7" n="N006"/&gt;
+         
+      je ne voulais pas être fermé, ce fut des&lt;lb facs="#facs_2_tr_2_tl_8" n="N007"/&gt;
+         
+      hurlements, les je veux, mon rôle, la France&lt;lb facs="#facs_2_tr_2_tl_9" n="N008"/&gt;
+         
+      et moi, mes services enfin grotesque, aussi&lt;lb facs="#facs_2_tr_2_tl_10" n="N009"/&gt;
+         
+      croyez le bien ils sont partis de leur plein&lt;lb facs="#facs_2_tr_2_tl_11" n="N010"/&gt;
+         
+      gré n'ayant pas le temps d'attendre !!!&lt;lb facs="#facs_2_tr_2_tl_12" n="N011"/&gt;
+         
+      J'en suis ravi -&lt;lb facs="#facs_2_tr_2_tl_13" n="N012"/&gt;
+         
+      Mais jamais un &lt;orgName&gt;musée&lt;/orgName&gt; n'aura rien de &lt;lb facs="#facs_2_tr_2_tl_14" n="N013"/&gt;
+         
+      Moi, et si &lt;persName key="Marcel, Pierre" xml:id="pmarcel" type="savant"&gt;P. M.&lt;/persName&gt; est nommé à la place&lt;lb facs="#facs_2_tr_2_tl_15" n="N014"/&gt;
+         
+      de ce pauvre &lt;persName key="Bertaux, Émile" xml:id="ebertaux" type="savant"&gt;Bertaux&lt;/persName&gt; je retire de mon &lt;lb facs="#facs_2_tr_2_tl_17" n="N015"/&gt;
+         
+      testament le legs à l'&lt;orgName&gt;Université&lt;/orgName&gt; de ma&lt;lb facs="#facs_2_tr_2_tl_18" n="N016"/&gt;
+               &lt;orgName&gt;bibliothèque&lt;/orgName&gt;, je la brulerais plutôt. &lt;lb facs="#facs_2_tr_2_tl_19" n="N017"/&gt;
+         
+      Voyez vous mon cher &lt;persName key="René-Jean" xml:id="rjean" type="protagoniste"&gt;René-Jean&lt;/persName&gt;, n'oubliez&lt;lb facs="#facs_2_tr_2_tl_20" n="N018"/&gt;
+         
+      pas que tous ces gens là sont des faiseurs&lt;lb facs="#facs_2_tr_2_tl_21" n="N019"/&gt;
+         
+      et des fouteurs dedans. Pour moi ils ne&lt;lb facs="#facs_2_tr_2_tl_22" n="N020"/&gt;
+         
+      m'auront plus jamais. &lt;lb facs="#facs_2_tr_2_tl_23" n="N021"/&gt;
+         
+      Je serai toujours heureux de vous être agreable&lt;lb facs="#facs_2_tr_2_tl_24" n="N022"/&gt;
+         
+      mais les &lt;orgName&gt;musées&lt;/orgName&gt;, les gens vivants des &lt;orgName&gt;musées&lt;/orgName&gt;
+               &lt;lb facs="#facs_2_tr_2_tl_25" n="N023"/&gt;
+         
+      ils m'ont vu&lt;lb facs="#facs_2_tr_2_tl_26" n="N024"/&gt;
+         
+      Je vais mieux mais je serai toujours &lt;lb facs="#facs_2_tr_2_tl_27" n="N025"/&gt;
+         
+      plus ou moins patraque.&lt;/ab&gt;
+            &lt;fw type="header" place="bottom" facs="#facs_2_region_1713803832390_1074"&gt;
+               &lt;lb facs="#facs_2_tr_2_tl_28" n="N001"/&gt;
+         
+      Bon courage et bien à vous&lt;lb facs="#facs_2_tr_2_tl_29" n="N002"/&gt;
+         
+      Votre ami&lt;lb facs="#facs_2_tr_2_tl_30" n="N003"/&gt;
+               &lt;persName key="Doucet, Jacques" xml:id="jdoucet" type="protagoniste"&gt;Jacques Doucet&lt;/persName&gt;
+            &lt;/fw&gt;
+         &lt;/div&gt;
+      &lt;/body&gt;

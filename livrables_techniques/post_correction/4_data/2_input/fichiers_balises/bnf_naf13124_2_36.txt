@@ -1,0 +1,82 @@
+&lt;body xmlns="http://www.tei-c.org/ns/1.0"&gt;
+         &lt;div&gt;
+            &lt;pb facs="#facs_1" n="1" xml:id="img_0001"/&gt;
+            &lt;ab facs="#facs_1_region_1624046102364_124" type="page"/&gt;
+            &lt;ab facs="#facs_1_region_1706274460335_465" type="page-numberpage-number"&gt;
+               &lt;lb facs="#facs_1_line_1706274474692_468" n="N001"/&gt;
+               &lt;hi rend="italic:true;"&gt;(folio)&lt;/hi&gt; 54&lt;/ab&gt;
+            &lt;fw type="header" place="top" facs="#facs_1_region_1713799995589_417"&gt;
+               &lt;lb facs="#facs_1_r1l1" n="N001"/&gt;
+               &lt;date month="0" day="0" year="0"&gt;Dimanche&lt;/date&gt;
+               &lt;lb facs="#facs_1_r1l3" n="N002"/&gt;
+               &lt;hi rend="serif:true;"&gt;46, AVENUE DU BOIS DE BOULOGNE&lt;/hi&gt;
+            &lt;/fw&gt;
+            &lt;p facs="#facs_1_r1"&gt;
+               &lt;lb facs="#facs_1_r1l4" n="N001"/&gt;
+         
+      Mon cher &lt;persName key="René-Jean" xml:id="rjean" type="protagoniste"&gt;René-Jean&lt;/persName&gt;
+               &lt;lb facs="#facs_1_r1l5" n="N002"/&gt;
+         
+      Avez vous quelque chose il me semble&lt;lb facs="#facs_1_r1l6" n="N003"/&gt;
+         
+      ne pas sentir dans votre reponse votre&lt;lb facs="#facs_1_r1l7" n="N004"/&gt;
+         
+      amenité et votre bonne grâce habituelle&lt;lb facs="#facs_1_r1l8" n="N005"/&gt;
+         
+      J'espère qu'il n'en est rien et que&lt;lb facs="#facs_1_r1l9" n="N006"/&gt;
+         
+      vous n'avez ni ennui particulier ni&lt;lb facs="#facs_1_r1l10" n="N007"/&gt;
+         
+      enervement passager.&lt;lb facs="#facs_1_r1l11" n="N008"/&gt;
+         
+      Vous me voyez au-dessus des contingences&lt;lb facs="#facs_1_r1l12" n="N009"/&gt;
+         
+      dans une quasi serenité de tout autre&lt;lb facs="#facs_1_r1l13" n="N010"/&gt;
+         
+      que de vous je craindrais d'y voir une&lt;lb facs="#facs_1_r1l14" n="N011"/&gt;
+         
+      petite pointe. mieux que personne&lt;lb facs="#facs_1_r1l15" n="N012"/&gt;
+         
+      vous savez combien en ces jours&lt;lb facs="#facs_1_r1l16" n="N013"/&gt;
+         
+      terribles depuis le commencement&lt;lb facs="#facs_1_r1l17" n="N014"/&gt;
+         
+      j'ai été de coeur et de tout à tout et&lt;lb facs="#facs_1_r1l18" n="N015"/&gt;
+         
+      à tous. alors ou se trouve helas ma&lt;lb facs="#facs_1_r1l19" n="N016"/&gt;
+         
+      serenité.!!&lt;lb facs="#facs_1_r1l20" n="N017"/&gt;
+         
+      J'aimerais croyez le être assez jeune&lt;/p&gt;
+            &lt;pb facs="#facs_2" n="2" xml:id="img_0002"/&gt;
+            &lt;ab facs="#facs_2_region_1624046125565_131" type="page"/&gt;
+            &lt;p facs="#facs_2_r1"&gt;
+               &lt;lb facs="#facs_2_r1l1" n="N001"/&gt;
+         
+      pour que l'action directe me&lt;lb facs="#facs_2_r1l2" n="N002"/&gt;
+         
+      fasse vivre cette existence de fièvre&lt;lb facs="#facs_2_r1l3" n="N003"/&gt;
+         
+      heureuse du front là vraiment&lt;lb facs="#facs_2_r1l4" n="N004"/&gt;
+         
+      l'on vit pour soi, bien plus que&lt;lb facs="#facs_2_r1l5" n="N005"/&gt;
+         
+      nous a l'arrière qui vivons les&lt;lb facs="#facs_2_r1l6" n="N006"/&gt;
+         
+      angoisses, les craintes, les douleurs de &lt;lb facs="#facs_2_r1l7" n="N007"/&gt;
+         
+      tous ceux qui nous entourent et qui&lt;lb facs="#facs_2_r1l8" n="N008"/&gt;
+         
+      sont loin. est ce vraiment là&lt;lb facs="#facs_2_r1l9" n="N009"/&gt;
+         
+      même &lt;unclear&gt;quasi&lt;/unclear&gt;. la serenité&lt;lb facs="#facs_2_r1l10" n="N010"/&gt;
+         
+      Merci de vos renseignements.&lt;/p&gt;
+            &lt;fw type="header" place="bottom" facs="#facs_2_region_1713800264702_458"&gt;
+               &lt;lb facs="#facs_2_r1l11" n="N001"/&gt;
+         
+      Croyez moi votre ami&lt;lb facs="#facs_2_r1l12" n="N002"/&gt;
+               &lt;persName key="Doucet, Jacques" xml:id="jdoucet" type="protagoniste"&gt;J. A. Doucet&lt;/persName&gt;
+            &lt;/fw&gt;
+         &lt;/div&gt;
+      &lt;/body&gt;

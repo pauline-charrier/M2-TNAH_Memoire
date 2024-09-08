@@ -1,0 +1,923 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.1301614,
+                    43.1202573
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Hyères, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "Hyères",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.7348324,
+                    37.9755648
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Athènes, Grèce",
+                "nom_type": "Fournisseurs, Collaborateurs, Voyages",
+                "date_voyage": "1910",
+                "lieu": "Athènes",
+                "document": "bnf_naf13124_2_66; bnf_naf13124_2_60; bnf_naf13124_2_60; bnf_naf13124_2_60; bnf_naf13124_2_60; bnf_naf13124_2_61"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3200410217200766,
+                    48.8588897
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Paris, France",
+                "nom_type": "Residences, Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Paris",
+                "document": "bnf_naf13124_2_45; bnf_naf13124_2_72; BINHA, Aut. 143_02_190; BINHA, Aut. 143_02_192; BINHA, Aut. 143_02_192; bnf_naf13124_2_51; bnf_naf13124_2_32; bnf_naf13124_2_32; bnf_naf13124_2_48; bnf_naf13124_2_33; bnf_naf13124_2_07; bnf_naf13124_2_05; bnf_naf13124_2_05; bnf_naf13124_2_26; bnf_naf13124_1; bnf_naf13124_1; bnf_naf13124_2_47; bnf_naf13124_2_49; bnf_naf13124_2_21; bnf_naf13124_2_25; bnf_naf13124_2_52; bnf_naf13124_2_02; bnf_naf13124_2_02; bnf_naf13124_2_08; bnf_naf13124_2_03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3524434,
+                    38.1112268
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Palerme, Italie",
+                "nom_type": "Collaborateurs, Voyages",
+                "date_voyage": "1911",
+                "lieu": "Palerme",
+                "document": "bnf_naf13124_2_10; bnf_naf13124_2_13; bnf_naf13124_2_12"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2487679,
+                    40.8358846
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Naples, Italie",
+                "nom_type": "Fournisseurs, Collaborateurs, Voyages",
+                "date_voyage": "1911",
+                "lieu": "Naples",
+                "document": "bnf_naf13124_2_10"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.859618918733858,
+                    39.591337
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Corfou, Grèce",
+                "nom_type": "Voyages",
+                "date_voyage": "1911",
+                "lieu": "Corfou",
+                "document": "bnf_naf13124_2_11"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5957333,
+                    45.2271961
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Parenzo, Croatie",
+                "nom_type": "Voyages",
+                "date_voyage": "1911",
+                "lieu": "Parenzo",
+                "document": "bnf_naf13124_2_70; bnf_naf13124_2_70"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7772781,
+                    45.6496485
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Trieste, Italie",
+                "nom_type": "Voyages",
+                "date_voyage": "1911",
+                "lieu": "Trieste",
+                "document": "bnf_naf13124_2_11"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.1834097,
+                    48.6937223
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Nancy, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Nancy",
+                "document": "bnf_naf13124_5_01; bnf_naf13124_2_09"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.9086066,
+                    47.9027336
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Orléans, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Orléans",
+                "document": "bnf_naf13124_2_19"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.647186,
+                    25.702096
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Louxor, Egypte",
+                "nom_type": "Voyages",
+                "date_voyage": "1909",
+                "lieu": "Louxor",
+                "document": "BINHA, Aut. 143_02_190; bnf_naf13124_2_04; bnf_naf13124_2_03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    31.2357257,
+                    30.0443879
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Le Caire, Egypte",
+                "nom_type": "Collaborateurs, Voyages",
+                "date_voyage": "1909",
+                "lieu": "Le Caire",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.6815998,
+                    43.1898949
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Beauvallon-sur-Mer, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "Beauvallon",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3378275,
+                    48.8734648
+                ]
+            },
+            "properties": {
+                "nom_lieu": "rue Laffitte, Paris, France",
+                "nom_type": "Fournisseurs",
+                "date_voyage": "",
+                "lieu": "Laffitte",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.14405508452768728,
+                    51.4893335
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Londres, Angleterre",
+                "nom_type": "Fournisseurs, Voyages",
+                "date_voyage": "1912",
+                "lieu": "Londres",
+                "document": "BINHA, Aut. 143_02_192; bnf_naf13124_2_58; bnf_naf13124_2_50; bnf_naf13124_2_02; bnf_naf13124_2_03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.268260385563714,
+                    37.399745949999996
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Délos, Grèce",
+                "nom_type": "Voyages",
+                "date_voyage": "1910",
+                "lieu": "Dèlos",
+                "document": "bnf_naf13124_2_60"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.500548577222837,
+                    38.4811538
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Delphes, Grèce",
+                "nom_type": "Voyages",
+                "date_voyage": "1910",
+                "lieu": "Delphes",
+                "document": "bnf_naf13124_2_60"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3989421,
+                    52.5108638
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Berlin, Allemagne",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Berlin",
+                "document": "bnf_naf13124_2_60; bnf_naf13124_2_03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.5541362,
+                    47.2186371
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Nantes, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Nantes",
+                "document": "bnf_naf13124_2_06; bnf_naf13124_2_07; bnf_naf13124_3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.0785177,
+                    47.2596224
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Saumur, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Saumur",
+                "document": "bnf_naf13124_2_06; bnf_naf13124_2_06"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.5515588,
+                    47.4739884
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Angers, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Angers",
+                "document": "bnf_naf13124_2_06"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.6800198,
+                    48.1113387
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Rennes, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Rennes",
+                "document": "bnf_naf13124_2_06; bnf_naf13124_2_06; bnf_naf13124_2_07; bnf_naf13124_2_49"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.7015872,
+                    48.4049375
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Fontainebleau, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "Fontainebleau",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.4860088,
+                    48.3905283
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Brest, France",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Brest",
+                "document": "bnf_naf13124_2_24"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.129799,
+                    49.6112768
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Luxembourg, Luxembourg",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Luxembourg",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.7616499,
+                    43.3641518
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Hendaye, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "Hendaye",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.427009,
+                    47.8041315
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Chalindrey, France",
+                "nom_type": "ReneJean",
+                "date_voyage": "",
+                "lieu": "Chalendrey",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.6635695,
+                    43.3870763
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Saint Jean de Luz, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "St Jean de Luz",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.8951716,
+                    31.1991806
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Alexandrie, Egypte",
+                "nom_type": "Voyages",
+                "date_voyage": "",
+                "lieu": "Alexandrie",
+                "document": "bnf_naf13124_2_05"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.3699525,
+                    43.2961743
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Marseille, France",
+                "nom_type": "Voyages",
+                "date_voyage": "",
+                "lieu": "Marseille",
+                "document": "bnf_naf13124_2_05; bnf_naf13124_2_08; bnf_naf13124_2_08"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.2830191,
+                    37.8512218
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Taormina, Italie",
+                "nom_type": "Voyages",
+                "date_voyage": "1911",
+                "lieu": "Taormina",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.2907196,
+                    37.0646139
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Syracuse, Italie",
+                "nom_type": "Collaborateurs, Voyages",
+                "date_voyage": "1911",
+                "lieu": "Syracuse",
+                "document": "bnf_naf13124_2_13; bnf_naf13124_2_12"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.4521749,
+                    46.9484742
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Berne, Suisse",
+                "nom_type": "ReneJean",
+                "date_voyage": "",
+                "lieu": "Berne",
+                "document": "bnf_naf13124_1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.2683912,
+                    43.7009358
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Nice, Nice",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Nice",
+                "document": "bnf_naf13124_2_17"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.16281323448937,
+                    35.298057299999996
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Cnossos, Crète",
+                "nom_type": "Voyages",
+                "date_voyage": "1910",
+                "lieu": "Knossos",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.5410422,
+                    47.3744489
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Zurich, Suisse",
+                "nom_type": "ReneJean",
+                "date_voyage": "",
+                "lieu": "Zurich",
+                "document": "bnf_naf13124_2_47; bnf_naf13124_2_49"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.4571125,
+                    49.409825
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Erquery, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "Erquery",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    30.316229,
+                    59.938732
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Saint Petersbourg, Russie",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Saint-Pétersbourg",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9758715,
+                    41.006381
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Constantinople, Turquie",
+                "nom_type": "Fournisseurs, Collaborateurs, Voyages",
+                "date_voyage": "1910",
+                "lieu": "Constantinople",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.7630419,
+                    47.4450945
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Schwarzach, Autriche",
+                "nom_type": "Voyages",
+                "date_voyage": "1911",
+                "lieu": "Schwarzach",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4829321,
+                    41.8933203
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Rome, Italie",
+                "nom_type": "Collaborateurs",
+                "date_voyage": "",
+                "lieu": "Rome",
+                "document": "bnf_naf13124_2_03"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.467561040475552,
+                    43.167205949999996
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Sienne, Italie",
+                "nom_type": "Voyages",
+                "date_voyage": "1913",
+                "lieu": "Sienne",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.4018624,
+                    43.7159395
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Pise, Italie",
+                "nom_type": "Voyages",
+                "date_voyage": "1913",
+                "lieu": "Pise",
+                "document": "bnf_naf13124_2_68"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.454430026192636,
+                    44.017763900000006
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Lucques, Italie",
+                "nom_type": "Voyages",
+                "date_voyage": "1913",
+                "lieu": "Lucques",
+                "document": "bnf_naf13124_2_68; bnf_naf13124_2_68"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.333947,
+                    47.8639612
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Langres, France",
+                "nom_type": "ReneJean",
+                "date_voyage": "",
+                "lieu": "Langres",
+                "document": "bnf_naf13124_2_42"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.2781827,
+                    48.8694827
+                ]
+            },
+            "properties": {
+                "nom_lieu": "19 rue Spontini, Paris, France",
+                "nom_type": "Residences, BAA",
+                "date_voyage": "",
+                "lieu": "19 rue Spontini",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.2765526,
+                    48.8668427
+                ]
+            },
+            "properties": {
+                "nom_lieu": "16-18 rue Spontini, Paris, France",
+                "nom_type": "BAA",
+                "date_voyage": "",
+                "lieu": "16-18 rue Spontini",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.2556789,
+                    48.8781183
+                ]
+            },
+            "properties": {
+                "nom_lieu": "33 rue Saint-James, Neuilly, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "33 rue Saint-James",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3314533,
+                    48.8695072
+                ]
+            },
+            "properties": {
+                "nom_lieu": "Rue de la Paix, Paris, France",
+                "nom_type": "Residences",
+                "date_voyage": "",
+                "lieu": "Rue de la Paix",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.2903257,
+                    48.8840789
+                ]
+            },
+            "properties": {
+                "nom_lieu": "20 rue Galvani, Paris, France",
+                "nom_type": "ReneJean",
+                "date_voyage": "",
+                "lieu": "20 rue Galvani",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.2683154,
+                    48.8494964
+                ]
+            },
+            "properties": {
+                "nom_lieu": "44 rue des Perchamps, Paris, France",
+                "nom_type": "ReneJean",
+                "date_voyage": "",
+                "lieu": "44 rue des Perchamps",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3122923,
+                    48.8733
+                ]
+            },
+            "properties": {
+                "nom_lieu": "rue La Boétie, Paris, France",
+                "nom_type": "Fournisseurs",
+                "date_voyage": "",
+                "lieu": "rue La Boétie",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3158066,
+                    48.8751462
+                ]
+            },
+            "properties": {
+                "nom_lieu": "rue Miromesnil, Paris, France",
+                "nom_type": "Fournisseurs",
+                "date_voyage": "",
+                "lieu": "rue Miromesnil",
+                "document": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3314773,
+                    48.8503184
+                ]
+            },
+            "properties": {
+                "nom_lieu": "6 rue de Mézières, Paris, France",
+                "nom_type": "Fournisseurs",
+                "date_voyage": "",
+                "lieu": "6 rue de Mézières",
+                "document": ""
+            }
+        }
+    ]
+}

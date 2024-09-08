@@ -1,0 +1,111 @@
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;pb facs="#facs_1" n="1" xml:id="img_0001"/&gt;
+        &lt;ab facs="#facs_1_region_1619203704972_28" type="page"&gt;
+            &lt;lb facs="#facs_1_line_1707123529186_279" n="N001"/&gt;
+            
+            (folio) 91&lt;lb facs="#facs_1_line_1707123580398_289" n="N002"/&gt;
+            
+            COMPAGNIE INTERNATIONALE DES WAGONS-LITS&lt;lb facs="#facs_1_line_1707123589377_294" n="N003"/&gt;
+            
+            ET DES&lt;lb facs="#facs_1_line_1707123600482_299" n="N004"/&gt;
+            
+            GRANDS EXPRESS EUROPEENS&lt;lb facs="#facs_1_line_1707123608474_304" n="N005"/&gt;
+            
+            DIRECTION GÉNÉRALE&lt;lb facs="#facs_1_line_1707123616060_309" n="N006"/&gt;
+            
+            40, Rue de l'Arcade&lt;lb facs="#facs_1_line_1707123623502_314" n="N007"/&gt;
+            
+            PARIS&lt;/ab&gt;
+        &lt;p facs="#facs_1_region_1707123552808_285"/&gt;
+        &lt;p facs="#facs_1_region_1707123489945_269"/&gt;
+        &lt;fw type="header" place="top" facs="#facs_1_region_1617630966846_972"&gt;
+            &lt;lb facs="#facs_1_r1l31" n="N001"/&gt;
+            
+            Pera Palace &amp;amp; Summer Palace&lt;lb facs="#facs_1_r1l33" n="N002"/&gt;
+            
+            CONSTANTINOPLE, le mardi 24 190&lt;/fw&gt;
+        &lt;p facs="#facs_1_r1"&gt;
+            &lt;lb facs="#facs_1_r1l34" n="N001"/&gt;
+            
+            Mon cher René-Jean,&lt;lb facs="#facs_1_r1l35" n="N002"/&gt;
+            
+            Voulez[-vous] me répondre de suite si&lt;lb facs="#facs_1_r1l36" n="N003"/&gt;
+            
+            vous le pouvez. Voici les&lt;lb facs="#facs_1_r1l38" n="N004"/&gt;
+            
+            publications du Musée de&lt;lb facs="#facs_1_r1l39" n="N005"/&gt;
+            
+            Constantinople - dites moi&lt;lb facs="#facs_1_r1l40" n="N006"/&gt;
+            
+            ce que nous avons - je ferai le&lt;lb facs="#facs_1_r1l41" n="N007"/&gt;
+            
+            nécessaire pour les autres :&lt;lb facs="#facs_1_r1l42" n="N008"/&gt;
+            
+            - Catalogue des Monnaies Musulmanes,&lt;lb facs="#facs_1_r1l43" n="N009"/&gt;
+            
+            Tome I - Monnaies Turcomanes&lt;lb facs="#facs_1_r1l44" n="N010"/&gt;
+            
+            en français,&lt;lb facs="#facs_1_r1l45" n="N011"/&gt;
+            
+            Tome II. Edition turque&lt;lb facs="#facs_1_r1l47" n="N012"/&gt;
+            
+            III&lt;lb facs="#facs_1_r1l48" n="N013"/&gt;
+            
+            IV&lt;/p&gt;
+        &lt;pb facs="#facs_2" n="2" xml:id="img_0002"/&gt;
+        &lt;ab facs="#facs_2_region_1619203758272_41" type="page"/&gt;
+        &lt;p facs="#facs_2_r1"&gt;
+            &lt;lb facs="#facs_2_r1l1" n="N001"/&gt;
+            
+            - Catalogue des sceaux en plomb. Arabes.&lt;lb facs="#facs_2_r1l2" n="N002"/&gt;
+            
+            et arabo-byzantins,&lt;lb facs="#facs_2_r1l4" n="N003"/&gt;
+            
+            édition turque.&lt;lb facs="#facs_2_r1l5" n="N004"/&gt;
+            
+            - Catalogue des figurines grecques de terre&lt;lb facs="#facs_2_r1l7" n="N005"/&gt;
+            
+            cuite,&lt;lb facs="#facs_2_r1l8" n="N006"/&gt;
+            
+            édition française&lt;lb facs="#facs_2_r1l9" n="N007"/&gt;
+            
+            - Catalogue des sculptures grecques, romaines&lt;lb facs="#facs_2_r1l11" n="N008"/&gt;
+            
+            et byzantines.&lt;lb facs="#facs_2_r1l13" n="N009"/&gt;
+            
+            Edition turque,&lt;lb facs="#facs_2_r1l14" n="N010"/&gt;
+            
+            française - épuisée&lt;lb facs="#facs_2_r1l15" n="N011"/&gt;
+            
+            - Catalogue des Monuments Himyarites et&lt;lb facs="#facs_2_r1l17" n="N012"/&gt;
+            
+            Palmyréniens.&lt;lb facs="#facs_2_r1l18" n="N013"/&gt;
+            
+            Edition turque.&lt;lb facs="#facs_2_r1l19" n="N014"/&gt;
+            
+            Edition française - épuisée&lt;lb facs="#facs_2_r1l20" n="N015"/&gt;
+            
+            Demandez à M. Mazerolles pour&lt;lb facs="#facs_2_r1l23" n="N016"/&gt;
+            
+            les monnaies et pour nous, dites-&lt;lb facs="#facs_2_r1l24" n="N017"/&gt;
+            
+            moi ce qu'il nous faut.&lt;lb facs="#facs_2_r1l25" n="N018"/&gt;
+            
+            Sebah va faire une collection&lt;lb facs="#facs_2_r1l26" n="N019"/&gt;
+            
+            complète du musée et il enverra&lt;lb facs="#facs_2_r1l27" n="N020"/&gt;
+            
+            en communication à Paris pour&lt;lb facs="#facs_2_r1l28" n="N021"/&gt;
+            
+            choisir.&lt;/p&gt;
+        &lt;fw type="header" place="bottom" facs="#facs_2_region_1617631230957_1022"&gt;
+            &lt;lb facs="#facs_2_r1l29" n="N001"/&gt;
+            
+            Tout bien ici,&lt;lb facs="#facs_2_line_1620629484748_88" n="N002"/&gt;
+            
+            à vous,&lt;lb facs="#facs_2_line_1620629496284_93" n="N003"/&gt;
+            
+            J. Doucet&lt;/fw&gt;
+    &lt;/div&gt;
+&lt;/body&gt;

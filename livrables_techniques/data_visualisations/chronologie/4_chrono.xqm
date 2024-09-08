@@ -1,0 +1,161 @@
+(:~ 
+    : Page chronologie | Timeline page
+    :
+    : @author Nom des auteurs, INHA https://www.inha.fr, ? License
+:)
+
+module namespace timeline = 'LettresDoucetReneJean/timeline';
+
+import module namespace config = 'LettresDoucetReneJean/config' at 'config.xqm';
+import module namespace app = 'LettresDoucetReneJean/app' at 'app.xqm';
+
+(: Fonction rendant le squelette HTML de la page chronologie :)
+declare
+    %rest:path("LettresDoucetReneJean/timeline")
+    %rest:GET
+    %rest:query-param("mode", "{$mode}", "")
+    %output:method('html')
+    function timeline:fonction($mode) {
+  
+  let $csv := ''
+  
+  return
+  
+  <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chronologie Jacques Doucet</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" />
+        <link href="{$config:Serveur}/ressources/css/chrono.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"/>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+        
+        
+        
+        <script src="{$config:Serveur}/ressources/js/chrono.js"></script>
+    </head>
+    
+    <body>
+    
+      <div id="serveur" style="display: none;">{$config:Serveur}</div> 
+
+      <div id="visualisation"></div>
+          <div id="controleurs">
+               <button onclick="setRange('periode1')">Afficher la période 1850-1907</button>
+               <button onclick="setRange('periode2')">Afficher la période 1908-1913</button>          
+              <button onclick="setRange('periode3')">Afficher la période 1914-1929</button>
+             
+             
+              
+              <!-- <button onclick="setRange('decennie')">Affichage par décennie</button>
+              <button onclick="setRange('annee')">Affichage par année</button>
+              <button onclick="setRange('global')">Revenir à l&apos;affichage global</button>  -->             
+              
+              
+              
+          </div>
+          <br/>
+          <div class="container">
+          <div id="telechargement">           
+            
+            
+            <a href="{$config:Serveur}/csv/chrono3.xlsx" download="chrono3.xlsx">
+              <button style="color:red; font-weight:bold;">Télécharger le fichier source au format Excel</button>
+            </a> 
+            
+            <button style="display:none;" onclick="window.location.href='{$config:Serveur}/csv/chrono3.csv'">Télécharger le fichier source au format CSV</button>
+            
+             <a style="display:none;" href="{$config:Serveur}/csv/chrono3.txt" download="chrono3.txt">
+              <button>Télécharger le fichier source au format texte</button>
+            </a> 
+            </div> 
+            <br/>  
+            
+                   
+           <div style="display:none;" class="row align-items-center">
+
+            <div class="col-md-4 d-flex justify-content-center">
+                <img class="img_info" src="{$config:Serveur}/img/pointing-right.png" alt="Icône indiquant une information venant à droite"/>
+            </div>
+            
+            <br/>
+            
+            <div class="col-md-8">      
+            <p class="instructions">
+              <i class="fas fa-info-circle mr-3"></i>
+              <u>Pour ouvrir le fichier CSV ou texte correctement dans Excel :</u>
+              <br/>          
+              <br/> 
+              1. Télécharger le fichier (CSV ou texte) en cliquant sur le lien ci-dessus.
+              <br/>
+              2. Ouvrir un nouveau document Excel vierge.
+              <br/> 
+              3. Dans la barre supérieure, cliquer sur <strong>Données</strong>.
+              <br/> 
+              4. Puis cliquer sur la deuxième icône en partant de la gauche <strong>A partir d&apos;un fichier texte/CSV.</strong>
+              <br/> 
+              5. Dans l&apos;assistant d&apos;importation qui apparaît, choisissez les options suivantes :
+              <br/>     
+              <i class="fas fa-arrow-right"></i> dans le menu déroulant <strong>Origine du fichier</strong>, sélectionner <strong>65001:Unicode (UTF-8)</strong>
+              <br/> 
+              <i class="fas fa-arrow-right"></i> dans le menu déroulant <strong>Délimiteur</strong>, sélectionner <strong>Tabulation</strong>
+              
+          </p>
+          
+          </div>
+
+           </div>
+
+          </div>
+          
+    </body>
+
+</html>
+    };
+
+(: Fonction (JCC) pour lire les fichiers de formats variés :)
+declare
+  %rest:path('/LettresDoucetReneJean/{$file=.+\.(csv|jpg|geojson|txt|xlsx)(\?.+?=.+?)?}') (:ajouter le geojson et le XLSX :)
+  %output:method('basex')
+  %perm:allow('public')
+function timeline:fichierCSV(
+  $file  as xs:string
+) as item()+ {
+  let $path := file:base-dir() ||  $file
+  return (
+    web:response-header(
+      map { 'media-type': web:content-type($path) },
+      map { 'Cache-Control': 'max-age=0,public', 'Content-Length': file:size($path) }
+    ),
+    file:read-binary($path)
+  )
+};  
+
+(: Fonction (PC) pour extraire de la base les informations utiles pour l'intégration des lettres dans la chronologie :)
+
+declare
+    %rest:path("/LettresDoucetReneJean/timeline/documents")
+    %rest:GET
+    %output:method("text")
+    function timeline:documents() {
+        let $bdd := $config:BDD
+        let $docs := for $doc in collection($bdd)
+            let $when := $doc//*:profileDesc/*:creation/*:date/@when
+            let $from := $doc//*:profileDesc/*:creation/*:date/@from[not(starts-with(., '2024'))] (: Exclure l'anomalie :)
+            let $id := $doc//*:sourceDesc//*:idno/text()
+            let $titre := $doc//*:title[@type='main']/text()
+            where $when or $from
+            return
+                concat(
+                    $id, ';', 
+                    if ($when) then $when else $from, ';', 'lettres', ';', $titre
+                )
+        let $csvHeader := 'id;date;type_event;titre'
+        let $csvContent := string-join($docs, '&#10;') (: Retours à la ligne :)
+        return concat($csvHeader, '&#10;', $csvContent)
+    };

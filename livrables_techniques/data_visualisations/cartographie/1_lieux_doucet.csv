@@ -1,0 +1,56 @@
+nom_lieu;nom_type;date_voyage;lieu
+Hyères, France;villegiature;;Hyères
+Athènes, Grèce;voyage, fournisseurs, corresp;1910;Athènes
+Paris, France;domicile, pm, corresp;;Paris
+Palerme, Italie;voyage, pm, corresp;1911;Palerme
+Naples, Italie;voyage, fournisseurs, corresp;1911;Naples
+Corfou, Grèce;voyage;1911;Corfou
+Parenzo, Croatie;voyage;1911;Parenzo
+Trieste, Italie;voyage;1911;Trieste
+Nancy, France;corresp;;Nancy
+Orléans, France;pm;;Orléans
+Louxor, Egypte;voyage;1909;Louxor
+Le Caire, Egypte;voyage, pm, corresp;1909;Le Caire
+Beauvallon-sur-Mer, France;villegiature;;Beauvallon
+rue Laffitte, Paris, France;marchand;;Laffitte
+Londres, Angleterre;voyage, fournisseurs;1912;Londres
+Délos, Grèce;voyage;1910;Dèlos
+Delphes, Grèce;voyage;1910;Delphes
+Berlin, Allemagne;corresp, pm;;Berlin
+Nantes, France;pm;;Nantes
+Saumur, France;pm;;Saumur
+Angers, France;pm;;Angers
+Rennes, France;pm;;Rennes
+Fontainebleau, France;villegiature;;Fontainebleau
+Brest, France;corresp;;Brest
+Luxembourg, Luxembourg;pm;;Luxembourg
+Hendaye, France;villegiature;;Hendaye
+Chalindrey, France;rj;;Chalendrey
+Saint Jean de Luz, France;villegiature;;St Jean de Luz
+Alexandrie, Egypte;voyage;;Alexandrie
+Marseille, France;voyage;;Marseille
+Taormina, Italie;voyage;1911;Taormina
+Syracuse, Italie;voyage, pm;1911;Syracuse
+Berne, Suisse;rj;;Berne
+Nice, Nice;pm;;Nice
+Cnossos, Crète;voyage;1910;Knossos
+Zurich, Suisse;rj;;Zurich
+Erquery, France;domicile;;Erquery
+Saint Petersbourg, Russie;pm;;Saint-Pétersbourg
+Constantinople, Turquie;voyage, pm, fournisseurs;1910;Constantinople
+Schwarzach, Autriche;voyage;1911;Schwarzach
+Rome, Italie;pm, corresp;;Rome
+Sienne, Italie;voyage;1913;Sienne
+Pise, Italie;voyage;1913;Pise
+Lucques, Italie;voyage;1913;Lucques
+Langres, France;rj;;Langres
+19 rue Spontini, Paris, France;domicile, baa;;19 rue Spontini
+16-18 rue Spontini, Paris, France;baa;;16-18 rue Spontini
+33 rue Saint-James, Neuilly, France;domicile;;33 rue Saint-James
+46 avenue du Bois-de-Boulogne, Neuilly, France;domicile;;46 avenue du Bois-de-Boulogne
+Rue de la Paix, Paris, France;domicile;;Rue de la Paix
+20 rue Galvani, Paris, France;rj;;20 rue Galvani
+44 rue des Perchamps, Paris, France;rj;;44 rue des Perchamps
+rue La Boétie, Paris, France;marchand;;rue La Boétie
+rue Miromesnil, Paris, France;marchand;;rue Miromesnil
+6 rue de Mézières, Paris, France;fournisseurs;;6 rue de Mézières
