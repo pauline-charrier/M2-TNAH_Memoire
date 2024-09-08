@@ -63,15 +63,16 @@ Le dépôt contient les répertoires et fichiers suivants :
           |_ transfos_body/
                 |_ espace_lb.xsl
                 |_ transfos_persName/
-                        |_ 1_
-                        |_ 2_
-                        |_ 3_
-                        |_ 4_
-                        |_ 5_
-                        |_ 6_
-                        |_ 7_
-                        |_ 8_
-                        |_ 9_
+                        |_ 1_bulles_MAS_18juin.xlsx
+                        |_ 2_index_personnes.csv
+                        |_ 3_mise_a_jour_csv.py
+                        |_ 4_index_personnes_joint.csv
+                        |_ 5_index_personnes_joint_2.csv
+                        |_ 6_reagencement.py
+                        |_ 7_index_personnes_reagence.csv
+                        |_ 8_fichier_de_travail_conversion_csv_xml.xq
+                        |_ 8bis_alignement_bdd_csv.xml
+                        |_ 9_transformation_finale_bdd.xq
     |_ docs_auxiliaires/
           |_ index/
                 |_ export_index_lieux.xq
