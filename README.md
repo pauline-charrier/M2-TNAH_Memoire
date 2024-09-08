@@ -3,9 +3,10 @@
 ## *L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale*
 
 Ce dépôt rassemble l'ensemble des documents relatifs au mémoire réalisé dans le cadre du stage de fin d'études du Master 2 "Technologies numériques appliquées à l'histoire".    
-Ce stage, qui a également donné lieu à des livrables techniques, a été effectué au pôle "Edition numérique" du Service numérique de la recherche de l'Institut national d'histoire de l'art et s'est étendu sur une durée de quatre mois, entre avril et juillet 2024.  
+Ce stage, qui a également donné lieu à des livrables techniques, a été effectué au pôle "Edition numérique" du Service numérique de la recherche (SNR) de l'Institut national d'histoire de l'art et s'est étendu sur une durée de quatre mois, entre avril et juillet 2024.  
 
-[Description du stage et du mémoire.]
+Le stage s'est concentré sur l'étude de la chaîne de traitement appliquée par le projet PENSE (2020-) pour la publication d'éditions numériques, du traitement de corpus textuels (XML-TEI) à l'exposition des données sur le web (développement d'interfaces utilisateur) en passant par la visualisation de données (Leaflet, Vis) et la correction automatique assistée par intelligence artificielle neuronale.
+Une partie du stage a été consacrée à la chaîne de traitement appliquée dans le cadre du projet d'édition de la correspondance de Jacques Doucet (1853-1929), bibliophile et mécène, figure importante de l'histoire de l'actuel Institut national d'histoire de l'art, avec son bibliothécaire René-Jean (1879-1951) sur la période 1908-1929. 
 
 ### Description du dépôt 
 
