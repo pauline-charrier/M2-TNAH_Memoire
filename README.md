@@ -18,7 +18,41 @@ Le dépôt contient les répertoires et fichiers suivants :
 
 #### Arborescence des fichiers
 ```text
-bla
+- CHARRIER_Memoire_M2TNAH.pdf
+- memoire_latex/
+    |_ main.tex
+    |_ part_1/
+          |_ chap_1
+          |_ chap_2
+          |_ chap_3
+    |_ part_2/
+          |_ chap_4
+          |_ chap_5
+    |_ part_3/
+          |_ chap_6
+          |_ chap_7
+    |_ images/
+          |_ [IMAGES]
+    |_ biblio/
+          |_ [BIBLIO]
+-livrables_techniques/
+    |_ outil_citation/
+          |_ pretraitement/
+                |_ TEI_nettoyage.py
+          |_ alignement_identifiants/
+                |_ mapping_id_tei_ead.py
+          |_ extraction_donnees/
+                |_ transfo_citation_liste.xq
+                |_ requete_baseX.xq
+                |_ transfo_citation_doc_global.xq
+          |_ prototype_presente/
+                |_ transfo_citation_indiv.xq
+    |_ data_visualisations/
+          |_ cartographie/
+          |_ chronologie/
+    |_ traitement_TEI/
+    |_ docs_auxiliaires/
+    |_ post_correction/
 ```
 
  ### Licence
