@@ -55,10 +55,6 @@ Le dépôt contient les répertoires et fichiers suivants :
     |_ post_correction/
 ```
 
- ### Licence
- 
- [Termes de la licence (CC-by-4.0)]
-
  ### Citer le mémoire
 
  [Citation texte du mémoire]
