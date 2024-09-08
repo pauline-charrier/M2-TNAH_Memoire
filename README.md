@@ -100,37 +100,37 @@ Le dépôt contient les répertoires et fichiers suivants :
           |_ 4_data/
                 |_ 1_verite_terrain/
                         |_ gt_balises/
-                                    |_ 
-                                    |_ 
-                                    |_
-                                    |_ 
+                                    |_ BINHA-Aut-143_02_192_corr.txt
+                                    |_ bnf_naf13124_2_36_corr.txt
+                                    |_ bnf_naf13124_2_56_corr.txt
+                                    |_ bnf_naf13124_2_63_corr.txt
                         |_ gt_texte/
-                                    |_ 
-                                    |_ 
-                                    |_ 
-                                    |_ 
+                                    |_ BINHA_Aut_143_02_192_corr.txt
+                                    |_ bnf_naf13124_2_36_corr.txt
+                                    |_ bnf_naf13124_2_56_corr.txt
+                                    |_ bnf_naf13124_2_63_corr.txt
                 |_ 2_input/
                         |_ fichiers_balises/
-                                    |_ 
-                                    |_ 
-                                    |_ 
-                                    |_ 
+                                    |_ BINHA_Aut_143_02_192.txt
+                                    |_ bnf_naf13124_2_36.txt
+                                    |_ bnf_naf13124_2_56.txt
+                                    |_ bnf_naf13124_2_63.txt
                         |_ fichiers_texte/
-                                    |_
-                                    |_ 
-                                    |_ 
-                                    |_ 
+                                    |_ BINHA_Aut_143_02_192.txt
+                                    |_ bnf_naf13124_2_36.txt
+                                    |_ bnf_naf13124_2_56.txt
+                                    |_ bnf_naf13124_2_63.txt
                 |_ 3_fichiers_alignes_pour_evaluation/
                         |_ output_gpt/
-                                    |_ 
-                                    |_ 
-                                    |_ 
-                                    |_ 
+                                    |_ BINHA_Aut_143_02_192.txt
+                                    |_ bnf_naf13124_2_36.txt
+                                    |_ bnf_naf13124_2_56.txt
+                                    |_ bnf_naf13124_2_63.txt
                         |_ verite_terrain/
-                                    |_ 
-                                    |_ 
-                                    |_
-                                    |_ 
+                                    |_ BINHA_Aut_143_02_192.txt
+                                    |_ bnf_naf13124_2_36.txt
+                                    |_ bnf_naf13124_2_56.txt
+                                    |_ bnf_naf13124_2_63.txt
           |_ languageTool/
                 |_ essai_correction_lt.py
 
