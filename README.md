@@ -19,6 +19,7 @@ Le dépôt contient les répertoires et fichiers suivants :
 #### Arborescence des fichiers
 ```text
 - CHARRIER_Memoire_M2TNAH.pdf
+
 - memoire_latex/
     |_ main.tex
     |_ part_1/
@@ -35,6 +36,7 @@ Le dépôt contient les répertoires et fichiers suivants :
           |_ [IMAGES]
     |_ biblio/
           |_ [BIBLIO]
+
 -livrables_techniques/
     |_ outil_citation/
           |_ pretraitement/
