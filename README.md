@@ -1,6 +1,6 @@
 # Mémoire de stage du Master "Technologies numériques appliquées à l'histoire"
 
-## *L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale*
+## *Entre pratiques éprouvées et ambitions expérimentales, le projet PENSE de l’INHA : une chaîne de traitement des sources de l’histoire de l’art, pour une édition numérique à double vocation, scientifique et patrimoniale*
 
 Ce dépôt rassemble l'ensemble des documents relatifs au mémoire réalisé dans le cadre du stage de fin d'études du Master 2 "Technologies numériques appliquées à l'histoire".    
 Ce stage, qui a également donné lieu à des livrables techniques, a été effectué au pôle "Edition numérique" du Service numérique de la recherche (SNR) de l'Institut national d'histoire de l'art et s'est étendu sur une durée de quatre mois, entre avril et juillet 2024.  
@@ -11,7 +11,7 @@ Une partie du stage a été consacrée à la chaîne de traitement appliquée da
 ### Plan du mémoire
 ```text
 
-Partie I - PENSE : une chaîne de traitement pour une édition numérique à double vocation, scientifique et patrimoniale
+Partie I - PENSE : une chaîne de traitement d'édition numérique adossée à des pratiques établies en humanités numériques
 
 Chapitre 1 - Présentation institutionnelle, scientifique et technologique du projet PENSE  
     1.1 - Historique, acteurs et objectifs  
@@ -254,12 +254,12 @@ Le dépôt contient les répertoires et fichiers suivants :
 
  ### Citer le mémoire
 
-Pauline Charrier, *L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale*, mémoire de master « Technologies numériques appliquées à l’histoire », dir. Jean-Damien Généro, École nationale des chartes, 2024, [https://github.com/pauline-charrier/M2-TNAH_Memoire](https://github.com/pauline-charrier/M2-TNAH_Memoire).  
+Pauline Charrier, *Entre pratiques éprouvées et ambitions expérimentales, le projet PENSE de l’INHA : une chaîne de traitement des sources de l’histoire de l’art, pour une édition numérique à double vocation, scientifique et patrimoniale*, mémoire de master « Technologies numériques appliquées à l’histoire », dir. Jean-Damien Généro, École nationale des chartes, 2024, [https://github.com/pauline-charrier/M2-TNAH_Memoire](https://github.com/pauline-charrier/M2-TNAH_Memoire).  
 
  ```bibtex
  @thesis{charrier_pense_2024,
         location = {Paris},
-        title = {L'édition numérique au royaume de la bibliophilie : le cas du projet PENSE de l'INHA, entre conventions établies et ambition expérimentale},
+        title = {Entre pratiques éprouvées et ambitions expérimentales, le projet PENSE de l’INHA : une chaîne de traitement des sources de l’histoire de l’art, pour une édition numérique à double vocation, scientifique et patrimoniale},
         url = {https://github.com/pauline-charrier/M2-TNAH_Memoire/},
         pagetotal = {Nb de pages},
         institution = {École nationale des Chartes},
