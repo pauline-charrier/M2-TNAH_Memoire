@@ -178,7 +178,7 @@ Pauline Charrier, *Entre pratiques éprouvées et ambitions expérimentales, le 
         location = {Paris},
         title = {Entre pratiques éprouvées et ambitions expérimentales, le projet PENSE de l’INHA : une chaîne de traitement des sources de l’histoire de l’art, pour une édition numérique à double vocation, scientifique et patrimoniale},
         url = {https://github.com/pauline-charrier/M2-TNAH_Memoire/},
-        pagetotal = {213},
+        pagetotal = {215},
         institution = {École nationale des chartes},
         type = {Mémoire pour le diplôme de master "Technologies numériques appliquées à l'histoire"},
         author = {Charrier, Pauline},        
