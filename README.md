@@ -109,7 +109,7 @@ Le dépôt contient les répertoires et fichiers suivants :
 - `memoire_latex/`: répertoire rassemblant les fichiers .tex du mémoire (document maître, chapitres et sections, images, bibliographie).
 - `livrables_techniques/`: répertoire rassemblant les livrables techniques cités dans le mémoire.
 
-#### Arborescence des fichiers
+#### Arborescence des dossiers
 ```text
 ├───CHARRIER_Memoire_M2TNAH.pdf
 ├───livrables_techniques
