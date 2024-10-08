@@ -1,0 +1,399 @@
+%%%%% Préambule
+\documentclass[a4paper,12pt,twoside]{book}
+
+%%% Déclaration des packages utilisés
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage{fontspec}
+
+\usepackage{lmodern} % usage de la police Latin Modern (utile pour les caractères accentués)
+\usepackage[french]{babel} % gestion des langues
+\usepackage{xspace} % gestion des espaces
+\usepackage{minted} % intégration de la coloration syntaxique du code (code inséré dans le corps du mémoire)
+\usepackage{csquotes} % intégration des guillemets français
+\usepackage{lettrine} % faire une lettrine
+\usepackage{graphicx} % intégration des images
+\usepackage{float} % gestion objets flottants
+\usepackage{array} % intégration du tableau
+\usepackage{longtable} % intégration d'un long tableau s'étendant sur plusieurs pages
+\usepackage{enumitem} % personnaliser les listes à puces
+\usepackage{fancyhdr} % personnaliser les en-têtes
+\usepackage{chngcntr} % modifier compteur notes de bas de page
+
+% Spécifications d'usage
+\graphicspath{ {./img/} } % chemin de localisation des images
+\setminted{breaklines=true} % Spécification pour le package minted : couper les lignes trop longues
+
+% Mise en forme de l'Ecole des chartes
+\usepackage[style=enc,sorting=nyt,maxbibnames=10]{biblatex}
+\usepackage[margin=2.5cm]{geometry} 
+\usepackage{setspace}
+\onehalfspacing 
+\setlength\parindent{1cm}
+
+% Les compteurs
+\renewcommand{\thesubsection}{\thechapter.\arabic{subsection}} % numérotation des subsections
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}} % numérotation des subsubsections
+\setcounter{secnumdepth}{3} % les subsubsections apparaissent
+
+%%% Pour rendre les notes de bas de page continues
+\counterwithout{footnote}{chapter} 
+
+% Intégration de la bibliographie
+\usepackage[backend=biber, sorting=nyt, style=enc, minbibnames=10, maxbibnames=10]{biblatex}
+\addbibresource{bibliographie/biblio4.bib}
+%\nocite{*}
+
+%% Gestion de la navigation
+\usepackage[colorlinks=false, breaklinks=true, pdfusetitle, pdfsubject={Entre pratiques éprouvées et ambitions expérimentales, le projet PENSE de l’INHA : une chaîne de traitement des sources de l’histoire de l’art, pour une édition numérique à double vocation, scientifique et patrimoniale}, pdfkeywords={édition numérique, XML-TEI, XQuery, Python, datavisualisation, Design Thinking, Technologies web, API, LLM}]{hyperref}
+\usepackage[numbered]{bookmark}
+
+%% Métadonnées 
+\author{Pauline Charrier}
+\title{Entre pratiques éprouvées et ambitions expérimentales, le projet PENSE de l’INHA : une chaîne de traitement des sources de l’histoire de l’art, pour une édition numérique à double vocation, scientifique et patrimoniale}
+
+%% Glossaire / liste acronymes
+\usepackage[automake, acronym, toc]{glossaries}
+\makeglossaries
+\setacronymstyle{long-short} % permet de développer l'acronyme uniquement à la première occurrence dans le texte
+\newacronym{AJAX}{AJAX}{\emph{Asynchronous JavaScript And XML}}
+\newacronym{ARK}{ARK}{\emph{Archival Resource Key}}
+\newacronym{API}{API}{\emph{Application Programming Interface}}
+\newacronym{BAA}{BAA}{\emph{Bibliothèque d'Art et d'Archéologie}}
+\newacronym{BNF}{BnF}{\emph{Bibliothèque nationale de France}}
+\newacronym{CID}{CID}{\emph{Cellule d'Ingénierie Documentaire}}
+\newacronym{CMS}{CMS}{\emph{Content Management System}}
+\newacronym{CNN}{CNN}{\emph{Convolutional Neural Network}}
+\newacronym{CPU}{CPU}{\emph{Computing Processing Unit}}
+\newacronym{CSV}{CSV}{\emph{Comma Separated Values}}
+\newacronym{DTD}{DTD}{\emph{Document Type Definition}}
+\newacronym{EAD}{EAD}{\emph{Encoded Archival Description}}
+\newacronym{FAIR}{FAIR}{\emph{Findable Accessible Interoperable Reusable}}
+\newacronym{GPU}{GPU}{\emph{Graphics Processing Unit}}
+\newacronym{HTML}{HTML}{\emph{HyperText Markup Language}}
+\newacronym{HTR}{HTR}{\emph{Handwritten Text Recognition}}
+\newacronym{IA}{IA}{\emph{Intelligence Artificielle}}
+\newacronym{INHA}{INHA}{\emph{Institut national d'histoire de l'art}}
+\newacronym{LLM}{LLM}{\emph{Large Language Model}}
+\newacronym{MLM}{MLM}{\emph{Masked Language Model}}
+\newacronym{OCR}{OCR}{\emph{Optical Character Recognition}}
+\newacronym{ODD}{ODD}{\emph{One Document Does it all}}
+\newacronym{PENSE}{PENSE}{\emph{Plateforme d'Edition Numérique de Sources Enrichies}}
+\newacronym{SGML}{SGML}{\emph{Standard Generalized Markup Language}}
+\newacronym{SHS}{SHS}{\emph{Sciences Humaines et Sociales}}
+\newacronym{SNR}{SNR}{\emph{Service Numérique de la Recherche}}
+\newacronym{TAL}{TAL}{\emph{Traitement Automatique des Langues}}
+\newacronym{TEI}{TEI}{\emph{Text Encoding Initiative}}
+\newacronym{UI}{UI}{\emph{User Interface}}
+\newacronym{UUID}{UUID}{\emph{Universally Unique Identifier}}
+\newacronym{UX}{UX}{\emph{User eXperience}}
+\newacronym{W3C}{W3C}{\emph{World Wide Web Consortium}}
+\newacronym{XML}{XML}{\emph{eXtensible Markup Language}}
+
+% Commandes pour les acronymes
+\newcommand{\ajax}{\gls{AJAX}\xspace}
+\newcommand{\ark}{\gls{ARK}\xspace}
+\newcommand{\api}{\gls{API}\xspace}
+\newcommand{\baa}{\gls{BAA}\xspace}
+\newcommand{\bnf}{\gls{BNF}\xspace}
+\newcommand{\cid}{\gls{CID}\xspace}
+\newcommand{\cms}{\gls{CMS}\xspace}
+\newcommand{\cnn}{\gls{CNN}\xspace}
+\newcommand{\cpu}{\gls{CPU}\xspace}
+\newcommand{\csv}{\gls{CSV}\xspace}
+\newcommand{\dtd}{\gls{DTD}\xspace}
+\newcommand{\ead}{\gls{EAD}\xspace}
+\newcommand{\fair}{\gls{FAIR}\xspace}
+\newcommand{\gpu}{\gls{GPU}\xspace}
+\newcommand{\html}{\gls{HTML}\xspace}
+\newcommand{\htr}{\gls{HTR}\xspace}
+\newcommand{\ia}{\gls{IA}\xspace}
+\newcommand{\inha}{\gls{INHA}\xspace}
+\newcommand{\llm}{\gls{LLM}\xspace}
+\newcommand{\mlm}{\gls{MLM}\xspace}
+\newcommand{\ocr}{\gls{OCR}\xspace}
+\newcommand{\odd}{\gls{ODD}\xspace}
+\newcommand{\pense}{\gls{PENSE}\xspace}
+\newcommand{\sgml}{\gls{SGML}\xspace}
+\newcommand{\shs}{\gls{SHS}\xspace}
+\newcommand{\snr}{\gls{SNR}\xspace}
+\newcommand{\tal}{\gls{TAL}\xspace}
+\newcommand{\tei}{\gls{TEI}\xspace}
+\newcommand{\ui}{\gls{UI}\xspace}
+\newcommand{\uuid}{\gls{UUID}\xspace}
+\newcommand{\ux}{\gls{UX}\xspace}
+\newcommand{\wwwc}{\gls{W3C}\xspace}
+\newcommand{\xml}{\gls{XML}\xspace}
+
+
+%% Mise en page personnalisée
+% Commande pour avoir un texte à la fois italique et gras : 
+\newcommand{\textbfit}[1]{\textbf{\textit{#1}}}
+
+% Insertion d'une nouvelle page sans titres courants, texte suivant sur page impaire
+\newcommand{\sautdepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+
+% Gestion des en-têtes (titre courant sur les pages impaires, numéro de page)
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead[RO,LE]{\thepage} % numéro de page en haut à droite des pages impaires
+\fancyhead[LO]{\leftmark} % titre courant en haut à gauche des pages impaires
+\fancyhead[RE]{\rightmark} % absence de titre courant en haut à droite des pages paires
+\setlength\headheight{16pt} % hauteur de l'en-tête
+
+% Gestion des en-têtes pour les chapitres non numérotés (introduction et conclusion notamment)
+\newcommand\monchapitre[1]{
+ \chapter*{#1}
+  \markboth{}{} 
+   \markright{\MakeUppercase{#1}}
+}
+
+%%%%%%%%%% Document %%%%%%%%%
+
+\begin{document}
+
+\onehalfspacing 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PARTIES LIMINAIRES %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frontmatter
+    %% Page de titre
+    \include{templates/page-titre}
+    \thispagestyle{empty}	
+    %\sautdepage
+    \newpage{\pagestyle{empty}\cleardoublepage}
+    
+	%% Résumés
+    \include{templates/resume}
+    
+    %% Remerciements
+    \include{templates/remerciements}    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  BIBLIOGRAPHIE %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \sautdepage
+    
+    \part*{Bibliographie}
+    
+    \sautdepage
+    \printbibliography[keyword={hum_num},title={Humanités numériques - Généralités}]
+    
+    \sautdepage
+    \printbibliography[keyword={inha},title={Les humanités numériques et l'INHA : le SNR et le projet PENSE}]
+    
+    \sautdepage
+    \printbibliography[keyword={edition},title={Editions critiques et éditions numériques}]
+    
+    \sautdepage
+    \printbibliography[keyword={dataviz},title={Visualisation de données dans la recherche}]
+    
+    \sautdepage
+    \printbibliography[keyword={dialogue},title={La relation ingénieur/chercheur}]
+    
+    \sautdepage
+    \printbibliography[keyword={design},title={Design et Design Thinking}]
+    
+    \sautdepage
+    \printbibliography[keyword={ia},title={Intelligence artificielle : histoire, courants et applications}]
+    
+    \sautdepage
+    \printbibliography[keyword={divers},title={Divers}]
+    \sautdepage
+    
+    \phantomsection
+
+    %% Introduction
+    \addcontentsline{toc}{chapter}{Introduction} %Inclure l'introduction dans la table des matières
+    \monchapitre{Introduction}    
+        \input{templates/introduction.tex}
+    \thispagestyle{empty}
+    \sautdepage    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CORPS DU TEXTE %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+    %% PARTIE I %%
+    \part{PENSE : une chaîne de traitement d’édition numérique adossée à des pratiques établies en humanités numériques}
+
+        %% Chapitre 1 %%
+        \hypertarget{chap1}{%
+        \chapter{Présentation institutionnelle, scientifique et technologique du projet PENSE}\label{chap1-presentation-pense}}
+
+            \input{templates/part1/chap1}
+            
+        \sautdepage
+
+        %% Chapitre 2%%
+        \hypertarget{chap2}{%
+        \chapter{De la transcription à l’enrichissement des sources : le traitement des corpus textuels}\label{chap2-traitement-textuel}}
+
+            \input{templates/part1/chap2}
+            
+        \sautdepage
+
+        %% Chapitre 3 %%
+        \hypertarget{chap3}{%
+        \chapter{Visualisation des données de la recherche : enjeux de représentation et d’intelligibilité}\label{chap3-dataviz}}
+
+            \input{templates/part1/chap3}
+            
+        \sautdepage
+
+    %% PARTIE II %%
+    \part{La philosophie PENSE : une approche originale au sein des projets français en humanités numériques}
+
+        %% Chapitre 4%%
+        \hypertarget{chap4}{%
+        \chapter[Lutter contre un certaine « boîte noire » technologique]{Lutter contre une certaine « boîte noire » technologique : \\ \ favoriser l’implication des chercheurs dans l’établissement des projets numériques}\label{chap4-boite-noire}}
+
+            \input{templates/part2/chap4}
+            
+        \sautdepage
+
+        %% Chapitre 5 %%
+        \hypertarget{chap5}{%
+        \chapter[Introduire le \textit{design thinking} dans la recherche en histoire de l'art]{Introduire le \textit{design thinking} dans la recherche en histoire de l’art : \\ \ étude de cas d’une approche par prototypage du développement d’un outil d’interface web}\label{chap5-design-thinking}}
+
+            \input{templates/part2/chap5}
+            
+        \sautdepage
+
+    %% PARTIE III %%
+    \part{Dimension expérimentale du projet PENSE : étude des perspectives offertes par l’intelligence artificielle pour l’édition numérique}
+
+        %% Chapitre 6 %%
+        \hypertarget{chap6}{%
+        \chapter{L’IA au service de l’édition numérique savante, rapide tour d’horizon des applications possibles}\label{chap6-ia}}
+
+            \input{templates/part3/chap6}
+            
+        \sautdepage
+
+        %% Chapitre 7 %%
+        \hypertarget{chap7}{%
+        \chapter[Un exemple d’usage de l’IA neuronale en post-traitement de corpus textuels]{Un exemple d’usage de l’IA neuronale en post-traitement de corpus textuels : correction automatique du corpus Doucet par grand modèle de langage (LLM). \\ \ Protocole, résultats et alternatives}\label{chap7-llm-postco}}
+
+            \input{templates/part3/chap7}
+            
+        \sautdepage
+        
+
+\sautdepage
+
+    %% Conclusion
+    \monchapitre{Conclusion}
+    \addcontentsline{toc}{chapter}{Conclusion} % inclure la conclusion dans la table des matières
+    \input{templates/conclusion.tex}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ANNEXES %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+    \part*{Annexes}	
+    \addcontentsline{toc}{part}{Annexes} % inclure les annexes dans la table des matières
+    
+    \chapter[Les transformations TEI]{\label{label}Les transformations TEI}
+        \newline
+        \section{Encodage des métadonnées}
+	    \input{templates/annexes/traitement_tei/header/transfo_tei_doucet_xq}
+	    \clearpage
+        \newline
+        \section{Transformation permettant l'implémentation d'une fonctionnalité d'interface à terme}
+        \input{templates/annexes/traitement_tei/header/typologies_xq}  
+        \clearpage
+        \newline
+        \section{Enrichissement des noms de personnes}
+        \input{templates/annexes/traitement_tei/body/9_transfo_finale_bdd}
+ 
+    \chapter[Visualisations de données - cartographie]{\label{label}Visualisations de données - cartographie}
+        \newline
+        \section{Génération du GeoJson}
+	    \input{templates/annexes/dataviz/carte/carto2_py}
+	    \clearpage
+        \newline
+        \section{Visualisation cartographique : XQuery}
+        \input{templates/annexes/dataviz/carte/carte_xqm}
+        \clearpage
+        \newline
+        \section{Visualisation cartographique : JavaScript}
+        \input{templates/annexes/dataviz/carte/carte_js}
+
+    \chapter[Visualisations de données - chronologie]{\label{label}Visualisations de données - chronologie}
+        \newline
+        \section{Visualisation chronologique : XQuery}
+	    \input{templates/annexes/dataviz/chronologie/chrono_xqm}
+	    \clearpage
+        \newline
+        \section{Visualisation chronologique : JavaScript}
+        \input{templates/annexes/dataviz/chronologie/chrono_js}
+
+    \chapter[Développement d'un outil de citation]{\label{label}Développement d'un outil de citation}
+        \newline
+        \section{Script d'alignement TEI/EAD}
+	    \input{templates/annexes/citation/mapping}
+	    \clearpage
+        \newline
+        \section{Extraction des données TEI et exposition sur l'interface}
+        \input{templates/annexes/citation/transfo_citation_indiv_xq}
+
+    \chapter[Documents auxiliaires destinés à la recherche]{\label{label}Documents auxiliaires destinés à la recherche}
+        \newline
+        \section{Export d'un index des noms de lieu}
+	    \input{templates/annexes/docs_aux/export_lieux_index}
+	    \clearpage
+        \newline
+        \section{Modèle d'index comportant des liens}
+        \input{templates/annexes/docs_aux/modele_index_liens}
+        \clearpage
+        \newline
+        \section{Transformation vers teiCorpus}
+        \input{templates/annexes/docs_aux/transfo_vers_corpus}
+        \clearpage
+        \newline
+        \section{Implémentation d'une indexation interne au teiCorpus}
+        \input{templates/annexes/docs_aux/transfo_corpus_index}
+
+    \chapter[Tâche de post-correction assistée par intelligence artificielle]{\label{label}Tâche de post-correction assistée par intelligence artificielle}
+        \newline
+        \section{Requête à l'API de GPT 3.5}
+	    \input{templates/annexes/postcorrection/2_texte_seul_corr_api_gpt_texte_ipynb}
+	    \clearpage
+        \newline
+        \section{Script de pré-traitement avant évaluation des performances}
+        \input{templates/annexes/postcorrection/3_pre_traitement}
+        \clearpage
+        \newline
+        \section{Evaluation de la performance du modèle : distance de Levenshtein}
+        \input{templates/annexes/postcorrection/3_distance}
+        \clearpage
+        \newline
+        \section{Evaluation de la performance du modèle : Score BLEU}
+        \input{templates/annexes/postcorrection/3_score_bleu}
+        \clearpage
+        \newline
+        \section{Evaluation de la performance du modèle : Score ROUGE}
+        \input{templates/annexes/postcorrection/3_score_rouge}       
+
+	
+\sautdepage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TABLES ET LISTES %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+    \printacronyms[title=Liste des acronymes,toctitle=Acronymes, type=\acronymtype] % acronymes
+    \printglossary % glossaires
+  \listoffigures % liste des images
+
+  \tableofcontents % table des matières
+	
+\end{document}

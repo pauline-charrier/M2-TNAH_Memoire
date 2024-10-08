@@ -1,0 +1,221 @@
+\begin{minted}[linenos,frame=lines,fontsize=\small]{javascript}
+document.addEventListener('DOMContentLoaded', function () {
+    // Fonction pour traiter les dates du CSV externe (format varié avec des slashes)
+    function traiterDateChrono(dateStr) {
+        const parts = dateStr.split('/');
+        if (parts.length === 3) {
+            return new Date(parts[2], parts[1] - 1, parts[0]);
+        } else if (parts.length === 2) {
+            return new Date(parts[1], parts[0] - 1);
+        } else {
+            return new Date(dateStr); 
+        }
+    }
+
+    // Fonction pour traiter les dates du CSV serveur (format yyyy-mm-dd)
+    function traiterDateServeur(dateStr) {
+        const parts = dateStr.split('-');
+        if (parts.length === 3) {
+            return new Date(parts[0], parts[1] - 1, parts[2]);
+        } else {
+            return new Date(dateStr); 
+        }
+    }
+
+    // Fonction pour formater une date en jour mois année
+    function formaterDate(date) {
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        return new Intl.DateTimeFormat('fr-FR', options).format(date);
+    }
+
+    // Fonction pour grouper les événements en fonction du type_event
+    function grouperEvents(type_event) {
+        switch (type_event) {
+            case 'bio': return 1;
+            case 'baa': return 2;
+            case 'autre': return 3;
+            case 'lettres': return 4;
+            default: return 0;
+        }
+    }
+
+    // Fonction pour attribuer une classe CSS en fonction du type_event
+    function attribuerCSS(type_event) {
+        switch (type_event) {
+            case 'bio': return 'bio';
+            case 'baa': return 'baa';
+            case 'autre': return 'autre';
+            case 'lettres': return 'lettres';
+            default: return '';
+        }
+    }
+
+    // Fonction pour traiter le CSV externe
+    function chercherDonneesExterne(url, callback) {
+        fetch(url)
+            .then(response => response.text())
+            .then(text => {
+                const rows = text.trim().split('\n').slice(1).map(line => {
+                    const [date_format, date_origine, event, type_event, source, important] = line.split('\t');
+                    return { date_format, date_origine, event, type_event, source, important };
+                });
+                callback(rows);
+            });
+    }
+
+    // Fonction pour traiter le CSV serveur
+    function chercherDonneesServeur(url, callback) {
+        fetch(url)
+            .then(response => response.text())
+            .then(text => {
+                const rows = text.trim().split('\n').slice(1).map(line => {
+                    const [id, date, type_event, titre] = line.split(';');
+                    return { id, date, type_event, titre };
+                });
+                callback(rows);
+            });
+    }
+
+    const configServeur = document.getElementById('serveur').innerHTML.trim(); // aller chercher la valeur de la variable du module xq 
+    
+    // Fonction pour chercher l'image en fonction des critères
+    function chercherImage(date_format, type_event) {
+        if (date_format === '1898') {
+            return `${configServeur}/img/1898_paix.png`;
+        } else if (date_format === '1907' && type_event === 'bio') {
+            return `${configServeur}/img/1907_spontini.jpg`;
+        } else if (date_format === '02/06/1908') {
+            return `${configServeur}/img/1908_rene_jean.jpg`;
+        } else if (date_format === '03/1909') {
+            return `${configServeur}/img/1909_louxor.png`; 
+        } else if (date_format === '30/10/1929') {
+            return `${configServeur}/img/1906_doucet.png`;
+        }
+        return '';
+    }
+
+   
+   
+   
+   
+    // Charger et traiter le CSV externe
+    chercherDonneesExterne(`${configServeur}/csv/chrono3.csv`, dataExterne => {
+        const itemsExterne = dataExterne.map(d => {
+            const sourceText = d.source ? `<div><u>Source:</u> ${d.source}</div>` : '';
+            const imagePath = chercherImage(d.date_format, d.type_event);
+            const imageHtml = imagePath ? `<img src="${imagePath}" alt="Image représentative de l'événement">` : '';
+            return {
+                id: d.event,
+                content: '',
+                start: traiterDateChrono(d.date_format),
+                title: `
+                    <div class="custom-tooltip ${d.important === 'oui' ? 'important' : ''}">
+                        <div><b>${d.date_origine}</b></div>
+                        <div>${d.event}</div>
+                        ${imageHtml}
+                        ${sourceText}
+                    </div>`,
+                className: `${d.important === "oui" ? "important" : ""} ${attribuerCSS(d.type_event)}`,
+                group: grouperEvents(d.type_event),
+                style: `${d.important === "oui" ? "color: red;" : ""}`
+            };
+        });
+
+        // Charger et traiter le CSV serveur
+       
+        chercherDonneesServeur(`${configServeur}/timeline/documents`, dataServeur => {
+            const itemsServeur = dataServeur.map(d => {
+                const date = traiterDateServeur(d.date);
+                return {
+                    id: d.id,
+                    content: `<a href="${configServeur}/document/${d.id}" target="_blank"/>`,
+                    start: date,
+                    group: 4, // Assigner au groupe 4
+                    title: `
+                    <div class="custom-tooltip ${d.important === 'oui' ? 'important' : ''}">
+                      <b>${formaterDate(date)}</b>
+                      <br/>
+                      <a href="${configServeur}/document/${d.id}" target="_blank">${d.titre}</a>
+                      </div>`, // infobulle                     
+                    className: 'lettres', // pour la couleur cf.css
+                    
+                };
+            });
+
+            // Combiner les événements des deux sources
+            const allItems = itemsExterne.concat(itemsServeur);
+
+            // Options de la chronologie
+            const options = {
+                groupOrder: 'value',
+                tooltip: {
+                    followMouse: true,
+                    overflowMethod: 'cap'
+                },
+                stack: true,
+                orientation: 'both',
+                start: new Date(1907, 0, 1), // valeurs de l'affichage par défaut
+                end: new Date(1930, 11, 31),
+                tooltipOnItemUpdateTime: true,
+                height: "600px",                
+                zoomable: true
+            };
+
+            const conteneur = document.getElementById('visualisation');
+            const groups = new vis.DataSet([                
+                { id: 1, content: "<div id='txt_bio'>Événements de la vie de Jacques Doucet</div>", value: 1 },
+                { id: 2, content: "<div id='txt_baa'>Grandes dates de la Bibliothèque d'Art et d'Archéologie</div>", value: 2 },
+                { id: 3, content: "<div id='txt_alt'>Ventes, achats et collections</div>", value: 3 },
+                { id: 4, content: "<div id='txt_docs'>Correspondance Doucet - René-Jean</div>", value: 4 }                             
+            ]);
+
+            const chrono = new vis.Timeline(conteneur);
+            chrono.setOptions(options);
+            chrono.setGroups(groups);
+            chrono.setItems(allItems);
+
+            // Ajouter un gestionnaire d'événement pour les clics sur les éléments
+            chrono.on('select', function (properties) {
+              if (properties.items.length > 0) {
+              const itemId = properties.items[0];
+              const item = allItems.find(i => i.id === itemId);
+              if (item && item.group === 4) { 
+              window.open(`${configServeur}/document/${item.id}`, '_blank');
+              }
+             }
+            });
+
+            // Ajout de l'écouteur d'événements pour la souris (navigation dans la frise)
+            conteneur.addEventListener('mousemove', function (event) {
+                const BoundingRectChrono = conteneur.getBoundingClientRect();
+                const positionChrono = event.clientX - BoundingRectChrono.left;
+                const bornesChrono = chrono.getWindow();
+                const plageVisible = bornesChrono.end - bornesChrono.start;
+                const tempsCentral = bornesChrono.start + (positionChrono / conteneur.clientWidth) * plageVisible;
+
+                if (event.clientX < BoundingRectChrono.left + 50) { // voir à modifier
+                    chrono.moveTo(new Date(tempsCentral - plageVisible / 2));
+                } else if (event.clientX > BoundingRectChrono.right - 50) {
+                    chrono.moveTo(new Date(tempsCentral + plageVisible / 2));
+                }
+            });
+
+            // Ajout des fonctions de zoom pour les boutons (ajustement décennie, année, globale)
+            window.setRange = function (plage) {
+                const plagesPossibles = {
+                    decennie: { start: new Date(1850, 0, 1), end: new Date(1860, 0, 1) },
+                    annee: { start: new Date(1853, 0, 1), end: new Date(1854, 0, 1) },
+                    globale: { start: new Date(1840, 0, 1), end: new Date(1940, 11, 31) },
+                    
+                    
+                    periode1 : { start: new Date(1849, 0, 1), end: new Date(1908, 0, 1) },
+                    periode2 : { start: new Date(1907, 0, 1), end: new Date(1914, 0, 1) },
+                    periode3 : { start: new Date(1913, 0, 1), end: new Date(1930, 0, 1) }
+                };
+                const selectedRange = plagesPossibles[plage] || plagesPossibles.periode3;
+                chrono.setWindow(selectedRange.start, selectedRange.end);
+            };
+        });
+    });
+});
+\end{minted}

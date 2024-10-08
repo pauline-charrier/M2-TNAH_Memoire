@@ -1,0 +1,197 @@
+\begin{minted}[linenos,frame=lines,fontsize=\small]{xquery}
+
+(:~ 
+    : Page chronologie | Map page
+    :
+    : @author Nom des auteurs, INHA https://www.inha.fr, ? License
+:)
+
+module namespace map = 'LettresDoucetReneJean/map';
+
+import module namespace config = 'LettresDoucetReneJean/config' at 'config.xqm';
+import module namespace app = 'LettresDoucetReneJean/app' at 'app.xqm';
+
+declare
+    %rest:path("LettresDoucetReneJean/map")
+    %rest:GET
+    %rest:query-param("mode", "{$mode}", "")
+    %output:method('html')
+    function map:fonction($mode) {
+  
+  let $csv := ''
+  
+
+  return
+  
+  <html lang="en">
+  
+  
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Carte des lieux cités dans la correspondance Jacques Doucet - René-Jean</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+    <!-- CSS de la carte -->
+    <link href="{$config:Serveur}/ressources/css/carte.css" rel="stylesheet" />
+
+    <!-- MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />        
+</head>
+
+<body>
+
+    <!-- squelette HTML de la page -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Volet latéral pour la recherche à facettes -->
+            <div id="sidebar" class="col-md-3 bg-light">
+                <!-- Recherche à facettes -->
+                <h4 class="mt-3">Filtres</h4>
+                <div id="filtres">
+                    <h5>Caractéristiques des lieux référencés</h5><br/>
+                    <!-- Filtre pour les résidences -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Résidences" id="residencesCheck"
+                            onclick="updateFiltres()"/>
+                        <label class="form-check-label" for="residencesCheck">
+                            Résidences, villégiatures et lieux de travail de Jacques Doucet
+                        </label>
+                    </div>
+                    <br/>
+                    <!-- Filtre pour les voyages -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Voyages" id="voyagesCheck"
+                            onclick="updateFiltres()"/>
+                        <label class="form-check-label" for="voyagesCheck">
+                            Voyages de Jacques Doucet
+                        </label>
+                    </div>
+                    <br/>
+                    <!-- Filtre pour les fournisseurs -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Fournisseurs" id="fournisseursCheck"
+                            onclick="updateFiltres()"/>
+                        <label class="form-check-label" for="fournisseursCheck">
+                            Fournisseurs
+                        </label>
+                    </div>
+                    <br/>
+                    <!-- Filtre pour les collaborateurs -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Collaborateurs" id="collaborateursCheck"
+                            onclick="updateFiltres()"/>
+                        <label class="form-check-label" for="collaborateursCheck">
+                            Acteurs de la BAA et correspondants
+                        </label>
+                    </div>
+                    <br/>
+                    <!-- Filtre pour la BAA -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="BAA" id="baaCheck"
+                            onclick="updateFiltres()"/>
+                        <label class="form-check-label" for="baaCheck">
+                            Bibliothèque d'Art et d'Archéologie
+                        </label>
+                    </div>
+                    <br/>
+                    <!-- Filtre pour René-Jean -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="ReneJean" id="renejeanCheck"
+                            onclick="updateFiltres()"/>
+                        <label class="form-check-label" for="renejeanCheck">
+                            Domiciliations de René-Jean
+                        </label>
+                    </div>
+                    <br/>
+
+                    <h5 class="mt-3">Filtrer par date de voyage</h5>
+                    <div id="filtreDates"></div>
+                </div>
+                <!-- Boutons de zoom -->
+                <div class="mt-3">
+                    <button class="btn btn-primary" onclick="zoomParis()">Zoom sur Paris</button>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-primary" onclick="zoomEurope()">Dézoomer sur l&apos;Europe</button>
+                </div>
+
+            </div>
+
+            <!-- Emplacement de la carte Leaflet -->
+            <div id="map" class="col-md-9" style="height: 100vh;"></div>            
+        </div>
+    </div>
+
+    <!-- Légende -->
+    <div id="legende" 
+        class="leaflet-control"
+        style="background-color: rgba(255, 255, 255, 0.8); padding: 10px; border-radius: 5px; position: absolute; top: 10px; right: 10px; z-index: 1000;">
+        <h6>Légende</h6>
+        <div>
+            <img src="img/apartment.png" alt="Résidences_JD" style="width: 20px; height: 20px;"/> Résidences de Jacques Doucet : domiciles, villégiatures et lieux de travail
+        </div>
+        <div>
+            <img src="img/voyageur-avec-une-valise.png" alt="Voyages_JD" style="width: 20px; height: 20px;"/> Voyages de
+            Jacques Doucet
+        </div>
+        <div>
+            <img src="img/book-shop.png" alt="Fournisseurs" style="width: 20px; height: 20px;"/> Fournisseurs
+        </div>
+        <div>
+            <img src="img/quill-dessinant-une-ligne.png" alt="Collaborateurs" style="width: 20px; height: 20px;"/> Acteurs de la BAA et correspondants
+        </div>
+        <div>
+            <img src="img/bibliotheque.png" alt="BAA" style="width: 20px; height: 20px;"/> Bibliothèque d'Art et
+            d'Archéologie
+        </div>
+        <div>
+            <img src="img/home.png" alt="Rene-Jean" style="width: 20px; height: 20px;"/> Domiciliations de René-Jean
+        </div>
+    </div>
+
+    <!-- Div cachée contenant la variable Serveur -->
+    <div id="serveur" style="display: none;">{$config:Serveur}</div> 
+
+
+    <!-- Déplacement des scripts JS (pb de chargement dans le navigateur sinon) -->
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>   
+    <!-- JS de la visualisation -->
+    <script src="{$config:Serveur}/ressources/js/carte.js"></script>
+    <!-- MarkerCluster JavaScript -->
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- Bootstrap JS et ses dépendances (jQuery et Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html> };
+
+(: Fonction pour aller chercher tous les placeNames et rendre un csv alignant les identifiants des documents aux placeNames qu'ils contiennent :)
+declare 
+  %rest:path('/LettresDoucetReneJean/map/placenames')
+  %rest:GET
+  %output:method('text')
+  function map:placenames() {
+    let $bdd := $config:BDD
+    let $docs := for $doc in collection($bdd)
+      let $id := $doc//*:sourceDesc//*:idno/text()
+      for $place in $doc//*:placeName
+      return 
+        concat(
+          $id, ';', 
+          $place
+        )
+    let $csvEnTete := 'id;placeName'
+    let $csvCellule := string-join($docs, '&#10;')
+    return concat($csvEnTete, '&#10;', $csvCellule)
+  };  
+\end{minted}

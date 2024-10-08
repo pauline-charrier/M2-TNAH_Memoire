@@ -1,0 +1,176 @@
+\begin{minted}[linenos,frame=lines,fontsize=\small]{xquery}
+(: Chargement de la base :)
+
+let $base := collection('Doucet')
+
+(: Scénario de transformation XSLT :)
+
+let $style :=
+  <xsl:stylesheet version='3.0'
+    xmlns:xsl='http://www.w3.org/1999/XSL/Transform'
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:prefix1="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="prefix1">       
+    <xsl:output method="xml" omit-xml-declaration="yes" indent="yes" />
+    
+    <xsl:template match="@* | node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>                     
+        </xsl:copy>          
+    </xsl:template>
+    
+  <xsl:template match="//*:fileDesc">
+    <xsl:copy>
+        <xsl:apply-templates select="@* | node()"/>
+    </xsl:copy>
+     <encodingDesc>     
+      <projectDesc>
+        <p>Description du projet éditorial</p>
+      </projectDesc>
+      <editorialDecl>
+        <normalization>
+          <p>Description du protocole de normalisation.</p>
+        </normalization>
+        <correction>
+          <p>Description du protocole de correction.</p>
+        </correction>
+        <punctuation>
+          <p>Description du traitement appliqué à la ponctuation.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+</xsl:template>
+    
+
+
+    
+    <xsl:template match="//*:fileDesc/*:titleStmt">
+      <titleStmt>
+        <title type="main">
+          <xsl:value-of select="replace(./*:title,'^[^A-Z]+', '')" />
+        </title>
+        <xsl:choose>
+              <xsl:when test="not(exists(./*:author))">
+                <author>
+                Commission archéologique de l&apos;Indochine
+                </author>
+               </xsl:when>  
+              <xsl:otherwise>
+              </xsl:otherwise>           
+          </xsl:choose>
+       
+       <author>
+       <!-- <xsl:for-each select="./*:author">  -->
+  
+   
+          <xsl:if test="contains(./*:author, 'Jacques Doucet')">
+            <xsl:attribute name="ref-idref">https://www.idref.fr/033048010</xsl:attribute>          
+          DOUCET, Jacques
+          </xsl:if>
+          <xsl:if test="contains(./*:author, 'René Jean')">
+            <xsl:attribute name="ref-idref">https://www.idref.fr/033994579</xsl:attribute>
+          JEAN, René</xsl:if>
+          <xsl:if test="contains(./*:author, 'Félix Pommier')">
+          <xsl:attribute name="ref-idref">https://www.idref.fr/121451623</xsl:attribute>
+          POMMIER, Félix</xsl:if>
+          <!-- </xsl:for-each> -->
+
+
+        </author>        
+     </titleStmt>
+     
+   <editionStmt>        
+        <respStmt>
+           <name>SARDA, Marie-Anne</name>
+           <resp>Coordination scientifique, transcription</resp>
+        </respStmt>        
+     </editionStmt>     
+    </xsl:template>
+
+    
+    <xsl:template match="//*:fileDesc/*:publicationStmt">
+      <publicationStmt>
+         <publisher>Institut national d’histoire de l’art (INHA)</publisher>         
+         <idno type="INHA"></idno>         
+      </publicationStmt>
+    </xsl:template>
+
+    
+    <xsl:template match="//*:fileDesc/*:seriesStmt">
+    <seriesStmt>
+    <title>
+    <xsl:attribute name="ref-bnf">
+        <xsl:if test="starts-with(./*:title, 'BNF_NAF16584')">ark:/12148/btv1b10073919q</xsl:if>
+        <xsl:if test="starts-with(./*:title, 'BNF_NAF13124')">ark:/12148/btv1b9066501z</xsl:if>        
+      </xsl:attribute>
+      <xsl:value-of select="./*:title"/>   
+         
+    </title>
+        <!-- Nécessité de modifier les conditions ('idno' au lieu du 'title') -->          
+        <xsl:if test="starts-with(./*:title, 'BNF_NAF16584')">
+          <ref type="series-bnf">
+            https://archivesetmanuscrits.bnf.fr/ark:/12148/cc3975x
+          </ref>
+        </xsl:if>
+        <xsl:if test="starts-with(./*:title, 'BNF_NAF13124')">
+          <ref type="series-bnf">
+          https://archivesetmanuscrits.bnf.fr/ark:/12148/cc60483
+          </ref>
+        </xsl:if>
+        <xsl:if test="starts-with(./*:title, 'Autographes 143_02')">
+          <ref type="series-calames">
+          https://calames.abes.fr/pub/#details?id=Calames-201572213721131
+          </ref>
+          <ref type="series-calames">
+          https://calames.abes.fr/pub/#details?id=FileId-1975
+          </ref>
+        </xsl:if>         
+        </seriesStmt>         
+    
+    </xsl:template>
+    
+  
+   
+
+   
+    <xsl:template match="//*:sourceDesc//*:msIdentifier/*:institution">
+      <institution>
+      Institut national d’histoire de l’art (INHA)
+      </institution>
+    </xsl:template>
+
+   
+    <xsl:template match="//*:profileDesc/*:langUsage">
+      <langUsage>
+        <language ident="fr">French</language>
+      </langUsage> 
+    </xsl:template> 
+    
+    <xsl:template match="//*:lb">
+      <xsl:copy-of select="."/>
+      <xsl:text>
+        &#x20;
+      </xsl:text>
+    </xsl:template>
+      
+  </xsl:stylesheet>
+ 
+(: XQuery appliquant la transformation à chaque fichier :)
+
+let $transfos := 
+  for $page at $pos in $base
+    let $id := base-uri($page)
+    let $transfo := xslt:transform($page,$style)
+   return $transfo
+
+let $chemins := 
+  for $transfo in $transfos
+    let $url_1 := replace($transfo/*:TEI//*:idno/text(), ', ', '_')
+    let $url_2 := replace($url_1, '. ', '_')
+  return $url_2||'.tei.xml'
+    
+(: Génération d'une nouvelle base de données à partir de la transformation :)
+
+return (db:create('Doucet2',$transfos,$chemins))
+\end{minted}

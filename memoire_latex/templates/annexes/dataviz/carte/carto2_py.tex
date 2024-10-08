@@ -1,0 +1,97 @@
+\begin{minted}[linenos,frame=lines,fontsize=\small]{python}
+import csv
+import json
+import requests
+from collections import defaultdict
+import geopy
+from geopy.geocoders import Nominatim
+from geopy.exc import GeocoderTimedOut
+
+
+geolocator = Nominatim(user_agent="geojson_generator")
+
+def geocoder_adresse(address):
+    try:
+        localisation = geolocator.geocode(address)
+        if localisation:
+            return (localisation.latitude, localisation.longitude)
+    except GeocoderTimedOut:
+        return geocoder_adresse(address)
+    return None
+
+def typer_lieux(types):
+    classification = set()
+    if 'villegiature' in types or 'domicile' in types:
+        classification.add('Residences')
+    if 'voyage' in types:
+        classification.add('Voyages')
+    if 'fournisseurs' in types or 'marchand' in types:
+        classification.add('Fournisseurs')
+    if 'corresp' in types or 'pm' in types:
+        classification.add('Collaborateurs')
+    if 'baa' in types:
+        classification.add('BAA')
+    if 'rj' in types:
+        classification.add('ReneJean')
+    return list(classification)
+
+# Charger les données CSV depuis l'URL (ça marche avec localhost en brut mais c'est pas opti)
+csv_url = 'http://localhost:8080/LettresDoucetReneJean/map/placenames'
+response = requests.get(csv_url)
+response.raise_for_status()
+csv_data = response.text
+
+# "Parser" données CSV
+csv_reader = csv.DictReader(csv_data.splitlines(), delimiter=';')
+placenames_data = defaultdict(list)
+for row in csv_reader:
+    placenames_data[row['placeName']].append(row['id'])
+
+csv_file_path = 'lieux_doucet.csv'
+geojson_data = {
+    "type": "FeatureCollection",
+    "features": []
+}
+
+# Lecture du fichier CSV local (csv d'origine)
+with open(csv_file_path, mode='r', encoding='utf-8') as fichier_csv_local:
+    csvreader = csv.DictReader(fichier_csv_local, delimiter=';')
+    for row in csvreader:
+        nom_lieu = row['nom_lieu']
+        nom_type = row['nom_type']
+        date_voyage = row['date_voyage']
+        lieu = row['lieu']
+
+        types = [t.strip() for t in nom_type.split(',')]
+        types_classifies = typer_lieux(types)
+        
+        address = nom_lieu
+        coordinates = geocoder_adresse(address)
+        
+        if coordinates:
+            # Ajouter les ids correspondants aux placeNames au document
+            document_ids = '; '.join(placenames_data.get(lieu, [])) #séparer par un point-virgule (car virgules dans les id) et un espace pour permettre le wrap dans l'infobulle
+            
+            feature = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [coordinates[1], coordinates[0]]
+                },
+                "properties": {
+                    "nom_lieu": nom_lieu,
+                    "nom_type": ', '.join(types_classifies),
+                    "date_voyage": date_voyage,
+                    "lieu": lieu,
+                    "document": document_ids
+                }
+            }
+            geojson_data["features"].append(feature)
+
+# Sauvegarde du GeoJSON dans un fichier
+path_fichier_geojson = 'lieux3.geojson'
+with open(path_fichier_geojson, 'w', encoding='utf-8') as fichier_geojson:
+    json.dump(geojson_data, fichier_geojson, ensure_ascii=False, indent=4)
+
+print(f"Fichier obtenu : {path_fichier_geojson}")
+\end{minted}
