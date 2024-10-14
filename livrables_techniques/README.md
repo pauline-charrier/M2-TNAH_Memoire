@@ -1,9 +1,9 @@
 ## Répertoire contenant les livrables techniques réalisés pendant le stage de fin d'études 
 ### Avril-Juillet 2024 - Pôle Éditions numériques du Service numérique de la recherche de l'INHA
 
-#### Arborescence des fichiers
+### _Arborescence des fichiers_
 
-##### Développement d'un outil d'interface utilisateur - Avril 2024
+#### Développement d'un outil d'interface utilisateur - Avril 2024
 
 ```text
 ├───alignement_identifiants
@@ -21,7 +21,7 @@
         transfo_citation_indiv.xq
 ``` 
 
-##### Transformations TEI - Avril-mai 2024
+#### Transformations TEI - Avril-mai 2024
 
 ```text
 ├───transfos_body
@@ -49,7 +49,7 @@
             4_typologies.xq
 
 ``` 
-##### Documents auxiliaires (dédiés à la recherche) - Mai 2024
+#### Documents auxiliaires (dédiés à la recherche) - Mai 2024
 
 ```text
 ├───index
@@ -63,7 +63,7 @@
 
 ``` 
 
-##### Visualisations de données - Juin-juillet 2024
+#### Visualisations de données - Juin-juillet 2024
 
 ```text
 ├───cartographie
@@ -101,7 +101,7 @@
             1908_rene_jean.jpg
             1909_louxor.png
 ``` 
-##### Tâche de post-correction de corpus textuel bruité assistée par intelligence artificielle (API GPT 3.5) - Juillet 2024
+#### Tâche de post-correction de corpus textuels bruités assistée par intelligence artificielle (API GPT 3.5) - Juillet 2024
 
 ```text
 ├───1_extraction_fichiers
