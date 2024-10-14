@@ -4,6 +4,7 @@
 ### _Arborescence des fichiers_
 
 #### Développement d'un outil d'interface utilisateur - Avril 2024
+`./outil_citation/` 
 
 ```text
 ├───alignement_identifiants
@@ -22,6 +23,7 @@
 ``` 
 
 #### Transformations TEI - Avril-mai 2024
+`./traitement_TEI/`
 
 ```text
 ├───transfos_body
@@ -50,6 +52,7 @@
 
 ``` 
 #### Documents auxiliaires (dédiés à la recherche) - Mai 2024
+`./docs_auxiliaires/`
 
 ```text
 ├───index
@@ -64,6 +67,7 @@
 ``` 
 
 #### Visualisations de données - Juin-juillet 2024
+`./data_visualisations/`
 
 ```text
 ├───cartographie
@@ -102,6 +106,7 @@
             1909_louxor.png
 ``` 
 #### Tâche de post-correction de corpus textuels bruités assistée par intelligence artificielle (API GPT 3.5) - Juillet 2024
+`./post_correction/`
 
 ```text
 ├───1_extraction_fichiers
