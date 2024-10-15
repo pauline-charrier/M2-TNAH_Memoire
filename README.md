@@ -101,8 +101,7 @@ Une partie du stage a été consacrée à la chaîne de traitement appliquée da
         7.3.1 - La piste des modèles "Seq2Seq" (séquence à séquence) et MLM ("masked language model") à l'épreuve de la correction automatique  
         7.3.2 - L'approche plus "traditionnelle" des "rule-based-systems": l'exemple de LanguageTool
 ```
-\
-\
+
 Mémoire compilé en ligne avec [Overleaf](https://fr.overleaf.com).
 
 ### Description du dépôt 
